@@ -9,7 +9,7 @@ const Header = () => {
         <p className='text-3xl'>{`< Dev KJ >`}</p>
         <ul className='flex gap-9 justify-end'>
           <li>
-            <NavButton section=''>
+            <NavButton href='#'>
               <div className='flex items-center gap-2'>
                 <AiOutlineHome />
                 Home
@@ -17,7 +17,7 @@ const Header = () => {
             </NavButton>
           </li>
           <li>
-            <NavButton section='about'>
+            <NavButton href='#about'>
               <div className='flex items-center gap-2'>
                 <AiOutlineUser />
                 About
@@ -25,7 +25,7 @@ const Header = () => {
             </NavButton>
           </li>
           <li>
-            <NavButton section='projects'>
+            <NavButton href='#projects'>
               <div className='flex items-center gap-2'>
                 <AiOutlineFundProjectionScreen />
                 Projects
@@ -33,7 +33,7 @@ const Header = () => {
             </NavButton>
           </li>
           <li>
-            <NavButton section='contact'>
+            <NavButton href='#contact'>
               <div className='flex items-center gap-2'>
                 <BsTelephone />
                 Contact

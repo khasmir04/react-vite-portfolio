@@ -1,14 +1,13 @@
-import { ButtonHTMLAttributes, ReactNode } from 'react'
+import { AnchorHTMLAttributes, ReactNode } from 'react'
 
-export interface NavButtonProps extends ButtonHTMLAttributes<Text> {
+export interface NavButtonProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   children: ReactNode,
-  section: string,
 }
 
 const NavButton = (props: NavButtonProps) => {
-  const { children, section } = props
+  const { children, ...rest } = props
   return (
-    <a href={`#${section}`} className='text-lg'>{children}</a>
+    <a {...rest} className='text-lg'>{children}</a>
   )
 }
 
