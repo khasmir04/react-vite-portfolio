@@ -27,7 +27,7 @@ const MainLayout = (props: { children: ReactNode }) => {
         </StyledAside>
         <main className='container m-auto'>{children}</main>
       </StyledContainer>
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }
