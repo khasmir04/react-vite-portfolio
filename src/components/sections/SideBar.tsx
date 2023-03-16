@@ -1,27 +1,70 @@
 import styled from 'styled-components'
 import { AiOutlineHome, AiOutlineUser, AiOutlineFundProjectionScreen } from 'react-icons/ai'
 import { BsGithub, BsBriefcase, BsTelephone } from 'react-icons/bs'
+import { HiExternalLink } from 'react-icons/hi'
 
 const StyledContainer = styled.div`
   flex-direction: column;
-  height: calc(100vh - 80px);
-  position: fixed;
-  background-color: #6320ee;
+  transition: all 1s;
+  /* height: calc(100vh - 160px); */
+  height: 100vh;
+  background-color: #1b1919;
   padding: 18px;
-  margin-left: 100px;
 `
 
-const SideBar = () => {
+const StyledAnchor = styled.a`
+  display: flex;
+  align-items: center;
+  svg {
+    margin: 0 6px;
+  }
+`
+
+const Labels = {
+  'github': 'Github',
+  'about': 'About',
+  'projects': 'Projects',
+  'experience': 'Experience',
+  'contact': 'Contact'
+}
+
+const SideBar = (props: { isLabeled: boolean, handleEnter: () => void, handleLeave: () => void }) => {
+  const { isLabeled, handleEnter, handleLeave } = props
   return (
-    <StyledContainer className='hidden md:flex'>
-      <div className='text-5xl'>KJ</div>
+    <StyledContainer className='hidden md:flex fixed' onMouseEnter={handleEnter} onMouseLeave={handleLeave}>
+      <div className='text-5xl'>{isLabeled ? '< KJ />' : 'KJ'}</div>
       <div className='m-auto'>
-        <ul className='flex flex-col gap-9 text-4xl'>
-          <li><a href='https://github.com/khasmir04' target='_blank'><BsGithub /></a></li>
-          <li><a href='#'><AiOutlineUser /></a></li>
-          <li><a href='#'><AiOutlineFundProjectionScreen /></a></li>
-          <li><a href='#'><BsBriefcase /></a></li>
-          <li><a href='#'><BsTelephone /></a></li>
+        <ul className='flex flex-col gap-[46px] text-2xl'>
+          <li>
+            <StyledAnchor href='https://github.com/khasmir04' target='_blank'><BsGithub />
+              {isLabeled && Labels['github']}
+              {isLabeled && <HiExternalLink />}
+            </StyledAnchor>
+          </li>
+          <li>
+            <StyledAnchor href='#'>
+              <AiOutlineUser />
+              {isLabeled && Labels['about']}
+            </StyledAnchor>
+          </li>
+          <li>
+            <StyledAnchor href='#projects'>
+              <AiOutlineFundProjectionScreen />
+              {isLabeled && Labels['projects']}
+            </StyledAnchor>
+          </li>
+          <li>
+            <StyledAnchor href='#experience'>
+              <BsBriefcase />
+              {isLabeled && Labels['experience']}
+            </StyledAnchor>
+          </li>
+          <li>
+            <StyledAnchor href='#contact'>
+              <BsTelephone />
+              {isLabeled && Labels['contact']}
+            </StyledAnchor>
+          </li>
         </ul>
       </div>
     </StyledContainer>
