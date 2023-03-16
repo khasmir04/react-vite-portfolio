@@ -22,7 +22,7 @@ const Home = () => {
         <div className='text-base'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla expedita beatae ipsam voluptas impedit dolorum praesentium, ipsum minima officiis soluta.
         </div>
-        <Button href='projects' className='text-base self-start'>See my work</Button>
+        <Button href='#projects' className='text-base self-start'>See my work</Button>
       </div>
       <div className='flex-auto w-3/5 md:w-2/5 p-6 flex items-center justify-center m-auto'>
         <div>

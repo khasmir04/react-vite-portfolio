@@ -1,7 +1,7 @@
-import { ReactNode } from 'react'
+import { AnchorHTMLAttributes, ReactNode } from 'react'
 import styled from 'styled-components'
 
-export interface ButtonProps extends React.HTMLProps<HTMLButtonElement> {
+export interface ButtonProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   children: ReactNode
 }
 
@@ -19,7 +19,7 @@ const StyledButton = styled.a`
 const Button = (props: ButtonProps) => {
   const { children, ...rest } = props
   return (
-    <StyledButton href={`#${rest.href}`} className={rest.className} >{children}</StyledButton>
+    <StyledButton {...rest} >{children}</StyledButton>
   )
 }
 
