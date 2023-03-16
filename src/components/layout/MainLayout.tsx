@@ -1,17 +1,17 @@
 import { ReactNode, useState } from 'react'
 import styled from 'styled-components'
-import Footer from '../Footer'
-import Header from '../Header'
-import SideBar from '../sections/SideBar'
+import Footer from './Footer'
+import Header from './Header'
+import SideBar from './SideBar'
 
 const StyledContainer = styled.div`
   display: grid;
-  grid-template-columns: 2fr auto;
+  grid-template-columns: 100px auto;
   margin: 0 auto;
 `
 
 const StyledAside = styled.aside`
-  width: 86px;
+  width: 90px;
 `
 
 const MainLayout = (props: { children: ReactNode }) => {

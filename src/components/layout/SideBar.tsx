@@ -16,7 +16,7 @@ const StyledAnchor = styled.a`
   display: flex;
   align-items: center;
   svg {
-    margin: 0 6px;
+    margin: 0 24px;
   }
 `
 

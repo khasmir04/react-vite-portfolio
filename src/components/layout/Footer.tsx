@@ -1,6 +1,6 @@
 import { AiOutlineUser, AiOutlineFundProjectionScreen, AiOutlineHome } from 'react-icons/ai'
 import { BsGithub, BsBriefcase, BsTelephone } from 'react-icons/bs'
-import NavButton from './common/NavButton'
+import NavButton from '../common/NavButton'
 
 const Footer = () => {
   return (
