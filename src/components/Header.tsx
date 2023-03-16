@@ -8,16 +8,16 @@ const Header = () => {
       <div className='container m-auto flex justify-between items-center'>
         <p className='text-3xl'>{`< Dev KJ >`}</p>
         <ul className='flex gap-9 justify-end'>
-          <li>
+          {/* <li>
             <NavButton href='#'>
               <div className='flex items-center gap-2'>
                 <AiOutlineHome />
                 Home
               </div>
             </NavButton>
-          </li>
+          </li> */}
           <li>
-            <NavButton href='#about'>
+            <NavButton href='#'>
               <div className='flex items-center gap-2'>
                 <AiOutlineUser />
                 About
@@ -29,6 +29,14 @@ const Header = () => {
               <div className='flex items-center gap-2'>
                 <AiOutlineFundProjectionScreen />
                 Projects
+              </div>
+            </NavButton>
+          </li>
+          <li>
+            <NavButton href='#experience'>
+              <div className='flex items-center gap-2'>
+                <AiOutlineFundProjectionScreen />
+                Experience
               </div>
             </NavButton>
           </li>

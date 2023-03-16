@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className='w-100 h-[80px] p-5 bg-[#6320ee]'>
       <div className='container m-auto flex justify-between items-center'>
-        <p className='text-3xl'>{`< Dev KJ />`}</p>
+        <p className='text-3xl ml-auto'>{`< Dev KJ />`}</p>
       </div>
     </div>
   )

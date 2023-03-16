@@ -1,19 +1,21 @@
 import './App.css'
+import ScrollButton from './components/common/ScrollButton'
 import MainLayout from './components/layout/MainLayout'
 import About from './components/sections/About'
 import Contact from './components/sections/Contact'
-import Home from './components/sections/Home'
+import Experience from './components/sections/Experience'
 import Projects from './components/sections/Projects'
 
 function App() {
   return (
     <div className="App">
       <MainLayout>
-        <Home />
         <About />
         <Projects />
+        <Experience />
         <Contact />
       </MainLayout>
+      <ScrollButton />
     </div>
   )
 }
