@@ -6,18 +6,17 @@ import Particles from 'react-tsparticles'
 
 const ParticleBackground = () => {
   const particlesInit = useCallback(async (engine: Engine) => {
-    console.log(engine);
     await loadFull(engine);
   }, []);
 
-  const particlesLoaded = useCallback(async (container: Container | undefined) => {
-    await console.log(container);
-  }, []);
+  // const particlesLoaded = useCallback(async (container: Container | undefined) => {
+  //   await console.log(container);
+  // }, []);
   return (
     <Particles
       id="tsparticles"
       init={particlesInit}
-      loaded={particlesLoaded}
+      // loaded={particlesLoaded}
       options={{
         background: {
           color: {
