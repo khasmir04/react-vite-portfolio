@@ -21,7 +21,7 @@ const About = () => {
       <div className='flex-auto md:w-3/5 text-7xl text-left flex flex-col justify-center gap-9'>
         <p style={{ whiteSpace: 'pre-line' }}>Hello,{"\n"}I'm <SpecialText>Dev KJ</SpecialText>,{"\n"}a <SpecialText>Frontend Developer</SpecialText></p>
         <div className='text-base'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla expedita beatae ipsam voluptas impedit dolorum praesentium, ipsum minima officiis soluta.
+          Hi, I'm Khasmir Jhon Caluscusao. A very passionate Front-end React Developer based in Philippines.
         </div>
         <Button href='#projects' className='text-base self-start'>See my work</Button>
       </div>
