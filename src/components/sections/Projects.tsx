@@ -6,6 +6,7 @@ import gamingInfo from '../../assets/img/gaming.png'
 import valorantImg from '../../assets/img/valorant.png'
 import modelViewerImg from '../../assets/img/model.png'
 import PageTitle from '../common/PageTitle'
+import Button from '../common/Button'
 
 const StyledContainer = styled.div`
   margin: auto;
@@ -60,6 +61,11 @@ const Projects = () => {
         {data.map((project, key) => (
           <Card key={key} {...project} />
         ))}
+      </div>
+      <div className='mt-9'>
+        <Button href='https://github.com/khasmir04?tab=repositories' target='_blank'>
+          See more of my projects...
+        </Button>
       </div>
     </StyledContainer>
   )
