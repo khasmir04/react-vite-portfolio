@@ -7,7 +7,7 @@ const StyledContainer = styled.div`
   padding: 24px;
 `
 
-const StyledDescription = styled.p`
+const StyledDescription = styled.div`
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.5;
@@ -21,7 +21,7 @@ const Imp = styled.span`
 const Experience = () => {
   return (
     <StyledContainer id='experience' className='text-left'>
-      <PageTitle title='Experience' />
+      <PageTitle title='My Experiences' />
       <div className='mt-9'>
         <ol className="relative border-l border-gray-200 border-gray-700">
           <li className="mb-10 ml-4">
