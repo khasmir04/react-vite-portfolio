@@ -30,7 +30,7 @@ const data = [
     liveUrl: 'https://eduka-khasmir04.vercel.app/'
   },
   {
-    title: 'Gaming On',
+    title: 'Game On',
     description: 'Gaming information website showcasing the use of React, Tailwind, Rapid API and other tools/libraries.',
     image: gamingInfo,
     githubUrl: 'https://github.com/khasmir04/gaming-info-site',

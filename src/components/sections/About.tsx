@@ -24,7 +24,7 @@ const About = () => {
           Hello, I'm Khasmir Jhon Caluscusao. A very passionate Front-end React Developer based in Philippines.
         </div>
         <p className='text-xl'>
-          I have a passion for creating beautiful and functional websites. Have a strong background in HTML, CSS, and JavaScript. I also have experience with React, Next.js, Express, MongoDB and Tailwind CSS.
+          I have a passion for creating beautiful and functional websites. Have a strong background in HTML, CSS, TypeScript and JavaScript. I also have experience with React, Next.js, Express, MongoDB and Tailwind CSS.
         </p>
         <div className='flex text-base items-center gap-4'>
           <Button href='#projects' className='text-base'>See my work</Button>
