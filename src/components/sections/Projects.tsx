@@ -5,11 +5,12 @@ import eduKaImg from '../../assets/img/eduka.png'
 import gamingInfo from '../../assets/img/gaming.png'
 import valorantImg from '../../assets/img/valorant.png'
 import modelViewerImg from '../../assets/img/model.png'
+import PageTitle from '../common/PageTitle'
 
 const StyledContainer = styled.div`
   margin: auto;
   /* display: flex; */
-  height: 100vh;
+  /* height: 100vh; */
   padding: 24px;
 `
 
@@ -54,7 +55,7 @@ const data = [
 const Projects = () => {
   return (
     <StyledContainer id='projects'>
-      <h2 className='text-3xl'>My Top Projects</h2>
+      <PageTitle title='My Top Projects' />
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9 justify-around mt-9'>
         {data.map((project, key) => (
           <Card key={key} {...project} />

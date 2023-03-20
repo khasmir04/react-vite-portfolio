@@ -18,13 +18,13 @@ const SpecialText = styled.span`
 const About = () => {
   return (
     <StyledContainer id='' className='flex-col-reverse md:flex-row md:h-[calc(100vh-80px)]'>
-      <div className='flex-auto md:w-3/5 text-7xl text-left flex flex-col justify-center gap-9'>
+      <div className='flex-auto md:w-3/5 text-3xl md:text-7xl text-left flex flex-col justify-center gap-9'>
         <p style={{ whiteSpace: 'pre-line' }}>I'm <SpecialText>Dev KJ</SpecialText>,{"\n"}a <SpecialText>Frontend Developer</SpecialText></p>
         <div className='text-xl'>
           Hello, I'm Khasmir Jhon Caluscusao. A very passionate Front-end React Developer based in Philippines.
         </div>
         <p className='text-xl'>
-          I have a passion for creating beautiful and functional websites. Have a strong background in HTML, CSS, and JavaScript. I also have experience with React, Next.js, and Tailwind CSS.
+          I have a passion for creating beautiful and functional websites. Have a strong background in HTML, CSS, and JavaScript. I also have experience with React, Next.js, Express, MongoDB and Tailwind CSS.
         </p>
         <div className='flex text-base items-center gap-4'>
           <Button href='#projects' className='text-base'>See my work</Button>

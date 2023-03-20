@@ -1,16 +1,17 @@
 import styled from 'styled-components'
+import PageTitle from '../common/PageTitle'
 
 const StyledContainer = styled.div`
   margin: auto;
   display: flex;
-  height: 100vh;
+  /* height: 100vh; */
   padding: 24px;
 `
 
 const Contact = () => {
   return (
     <StyledContainer id='contact'>
-      <div>Contact</div>
+      <PageTitle title='Contact'/>
       <div></div>
     </StyledContainer>
   )
