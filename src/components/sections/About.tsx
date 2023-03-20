@@ -19,7 +19,7 @@ const About = () => {
   return (
     <StyledContainer id='' className='flex-col-reverse md:flex-row md:h-[calc(100vh-80px)]'>
       <div className='flex-auto md:w-3/5 text-3xl md:text-7xl text-left flex flex-col justify-center gap-9'>
-        <p style={{ whiteSpace: 'pre-line' }}>I'm <SpecialText>Dev KJ</SpecialText>,{"\n"}a <SpecialText>Frontend Developer</SpecialText></p>
+        <p style={{ whiteSpace: 'pre-line' }}>I'm <SpecialText className='text-4xl md:text-7xl'>Dev KJ</SpecialText>,{"\n"}a <SpecialText>Frontend Developer</SpecialText></p>
         <div className='text-xl'>
           Hello, I'm Khasmir Jhon Caluscusao. A very passionate Front-end React Developer based in Philippines.
         </div>

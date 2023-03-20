@@ -7,7 +7,7 @@ export interface NavButtonProps extends AnchorHTMLAttributes<HTMLAnchorElement> 
 const NavButton = (props: NavButtonProps) => {
   const { children, ...rest } = props
   return (
-    <a {...rest} className='text-lg'>{children}</a>
+    <a {...rest} className='text-lg hover:text-[#EB8258]'>{children}</a>
   )
 }
 

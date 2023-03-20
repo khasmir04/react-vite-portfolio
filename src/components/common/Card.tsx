@@ -23,10 +23,8 @@ const Card = (props: CardProps) => {
         <img className="rounded-t-lg" src={image} />
       </a>
       <div className="p-5">
-        <a href="#">
-          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 text-white">{title}</h5>
-        </a>
-        <p className="mb-3 font-normal text-gray-700 text-gray-400">{description}</p>
+        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 text-white">{title}</h5>
+        <p className="mb-3 font-normal text-[#e5e7eb ] text-gray-400">{description}</p>
         <StyledLink href={githubUrl} target='_blank' className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 bg-blue-600 hover:bg-blue-700 focus:ring-blue-800">
           Github
           <HiExternalLink style={{ fontSize: '18px', marginLeft: '4px' }} />
