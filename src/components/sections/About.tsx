@@ -21,10 +21,10 @@ const About = () => {
       <div className='flex-auto md:w-3/5 text-3xl md:text-7xl text-left flex flex-col justify-center gap-9'>
         <p style={{ whiteSpace: 'pre-line' }}>I'm <SpecialText className='text-4xl md:text-7xl'>Dev KJ</SpecialText>,{"\n"}a <SpecialText>Frontend Developer</SpecialText></p>
         <div className='text-xl'>
-          Hello, I'm Khasmir Jhon Caluscusao. A very passionate Front-end React Developer based in Philippines.
+          Hello, I'm <b>Khasmir Jhon Caluscusao</b>. A very passionate Front-end React Developer based in Philippines.
         </div>
         <p className='text-xl'>
-          I have a passion for creating beautiful and functional websites. Have a strong background in HTML, CSS, TypeScript and JavaScript. I also have experience with React, Next.js, Express, MongoDB and Tailwind CSS.
+          I have a passion for creating beautiful and functional websites. Have a strong background in <b>HTML</b>, <b>CSS</b>, <b>TypeScript</b> and <b>JavaScript</b>. I also have experience with <b>React</b>, <b>Next.js</b>, <b>Express</b>, <b>MongoDB</b> and <b>Tailwind CSS</b>.
         </p>
         <div className='flex text-base items-center gap-4'>
           <Button href='#projects' className='text-base'>See my work</Button>

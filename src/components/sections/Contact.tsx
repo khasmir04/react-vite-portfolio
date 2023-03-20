@@ -12,9 +12,7 @@ const StyledContainer = styled.div`
 const Contact = () => {
   return (
     <StyledContainer id='contact'>
-      <div>
-        <ContactForm />
-      </div>
+      <ContactForm />
     </StyledContainer>
   )
 }
