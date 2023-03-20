@@ -1,3 +1,4 @@
+import { BsGithub, BsLinkedin } from 'react-icons/bs'
 import styled from 'styled-components'
 import Button from '../common/Button'
 import image from './../../assets/me.jpg'
@@ -6,8 +7,7 @@ const StyledContainer = styled.div`
   margin: auto;
   display: flex;
   justify-content: center;
-  /* height: calc(100vh - 80px); */
-  height: 100vh;
+  height: calc(100vh - 80px);
   padding: 24px;
 `
 
@@ -23,7 +23,14 @@ const About = () => {
         <div className='text-xl'>
           Hello, I'm Khasmir Jhon Caluscusao. A very passionate Front-end React Developer based in Philippines.
         </div>
-        <Button href='#projects' className='text-base self-start'>See my work</Button>
+        <p className='text-xl'>
+          I have a passion for creating beautiful and functional websites. Have a strong background in HTML, CSS, and JavaScript. I also have experience with React, Next.js, and Tailwind CSS.
+        </p>
+        <div className='flex text-base items-center gap-4'>
+          <Button href='#projects' className='text-base'>See my work</Button>
+          <a href='https://github.com/khasmir04' target='_blank' className='text-3xl'><BsGithub /></a>
+          <a href='https://www.linkedin.com/in/khasmir/' target='_blank' className='text-3xl'><BsLinkedin /></a>
+        </div>
       </div>
       <div className='flex-auto w-3/5 md:w-2/5 p-6 flex items-center justify-center m-auto'>
         <div>
