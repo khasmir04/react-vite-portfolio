@@ -26,18 +26,18 @@ const Experience = () => {
         <ol className="relative border-l border-gray-200 border-gray-700">
           <li className="mb-10 ml-4">
             <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white border-gray-900 bg-gray-700" />
-            <time className="mb-1 text-sm font-normal leading-none text-gray-400 text-gray-500">
+            <time className="mb-1 text-md font-normal leading-none text-gray-400 text-gray-500">
               AUGUST 2021 - Present &middot; 1 yr 8 mos
             </time>
-            <h3 className="text-lg font-semibold text-gray-900 text-white">
+            <h3 className="text-2xl font-semibold text-gray-900 text-white">
               MIDDLE SOFTWARE ENGINEER
             </h3>
-            <p className="text-base font-normal text-gray-500 text-gray-400">
+            <p className="text-lg font-normal text-gray-500 text-gray-400">
               TERP &middot; Full-time
             </p>
             <StyledDescription>
               Working for almost 2 years as a Front-End React Developer.
-              <ul className='text-base list-disc ml-4'>
+              <ul className='text-lg list-disc ml-4'>
                 <li>Work on a project built using <Imp>ReactJS</Imp></li>
                 <li>Use <Imp>TypeScript</Imp> as main scripting language for development</li>
                 <li>Create components using <Imp>tsx</Imp>, <Imp>styled-components, html</Imp> and <Imp>css</Imp></li>
@@ -51,18 +51,18 @@ const Experience = () => {
           </li>
           <li className="mb-10 ml-4">
             <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white border-gray-900 bg-gray-700" />
-            <time className="mb-1 text-sm font-normal leading-none text-gray-400 text-gray-500">
+            <time className="mb-1 text-md font-normal leading-none text-gray-400 text-gray-500">
               April 2021 - July 2021 &middot; 4 mos
             </time>
-            <h3 className="text-lg font-semibold text-gray-900 text-white">
+            <h3 className="text-2xl font-semibold text-gray-900 text-white">
               WEB DEVELOPER TRAINEE
             </h3>
-            <p className="text-base font-normal text-gray-500 text-gray-400">
+            <p className="text-lg font-normal text-gray-500 text-gray-400">
               KodeGo &middot; Contract
             </p>
             <StyledDescription>
               Learned about web development and how to build a web application.
-              <ul className='text-base list-disc ml-4'>
+              <ul className='text-lg list-disc ml-4'>
                 <li>Dived deep into <Imp>HTML, CSS</Imp> and <Imp>JS</Imp>.</li>
                 <li>Learned how to use <Imp>ReactJS</Imp> and <Imp>NextJS</Imp>.</li>
                 <li>Practiced different CSS frameworks such as <Imp>Bootstrap</Imp> and <Imp>Tailwind CSS</Imp></li>
@@ -73,17 +73,18 @@ const Experience = () => {
           </li>
           <li className="mb-10 ml-4">
             <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white border-gray-900 bg-gray-700" />
-            <time className="mb-1 text-sm font-normal leading-none text-gray-400 text-gray-500">
+            <time className="mb-1 text-md font-normal leading-none text-gray-400 text-gray-500">
               February 2020 - May 2020 &middot; 4 mos
             </time>
-            <h3 className="text-lg font-semibold text-gray-900 text-white">
+            <h3 className="text-2xl font-semibold text-gray-900 text-white">
               SOFTWARE ENGINEER
             </h3>
-            <p className="text-base font-normal text-gray-500 text-gray-400">
+            <p className="text-lg font-normal text-gray-500 text-gray-400">
               CloudSwyft Global Systems, Inc. &middot; Internship
             </p>
             <StyledDescription>
-              <ul className='text-base list-disc ml-4'>
+              Started getting involved with Web Development in a team
+              <ul className='text-lg list-disc ml-4'>
                 <li>Use <Imp>Angular</Imp> to create components</li>
                 <li>Apply knowledge on <Imp>HTML</Imp> and <Imp>CSS</Imp> to develop web application</li>
                 <li>Participate in daily <Imp>meeting</Imp></li>
@@ -92,17 +93,18 @@ const Experience = () => {
           </li>
           <li className="mb-10 ml-4">
             <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white border-gray-900 bg-gray-700" />
-            <time className="mb-1 text-sm font-normal leading-none text-gray-400 text-gray-500">
+            <time className="mb-1 text-md font-normal leading-none text-gray-400 text-gray-500">
               May 2013 - April 2016 &middot; 3 yrs
             </time>
-            <h3 className="text-lg font-semibold text-gray-900 text-white">
+            <h3 className="text-2xl font-semibold text-gray-900 text-white">
               IT STAFF
             </h3>
-            <p className="text-base font-normal text-gray-500 text-gray-400">
+            <p className="text-lg font-normal text-gray-500 text-gray-400">
               Telford SVC. Phils., Inc. &middot; Full-time
             </p>
             <StyledDescription>
-              <ul className='text-base list-disc ml-4'>
+              The start of my Career
+              <ul className='text-lg list-disc ml-4'>
                 <li>Setup <Imp>network connection</Imp> of workstations</li>
                 <li>Software and hardware <Imp>installations</Imp></li>
                 <li><Imp>Maintenance</Imp> of computers, printers and telephones</li>
