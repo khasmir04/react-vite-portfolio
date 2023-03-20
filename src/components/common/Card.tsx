@@ -18,7 +18,7 @@ const StyledLink = styled.a`
 const Card = (props: CardProps) => {
   const { title, description, image, githubUrl, liveUrl } = props
   return (
-    <div className="max-w-lg bg-white border border-gray-200 rounded-lg shadow bg-[#0c0b0b90] border-gray-700 text-left">
+    <div className="max-w-lg border border-gray-200 rounded-lg shadow bg-[#0c0b0b90] border-gray-700 text-left">
       <a href={liveUrl}>
         <img className="rounded-t-lg" src={image} />
       </a>
