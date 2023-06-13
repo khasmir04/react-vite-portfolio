@@ -5,6 +5,7 @@ import eduKaImg from '../../assets/img/eduka.png'
 import gamingInfo from '../../assets/img/gaming.png'
 import valorantImg from '../../assets/img/valorant.png'
 import modelViewerImg from '../../assets/img/model.png'
+import martImg from '../../assets/img/mart.png'
 import PageTitle from '../common/PageTitle'
 import Button from '../common/Button'
 
@@ -31,6 +32,13 @@ const data = [
     liveUrl: 'https://eduka-khasmir04.vercel.app/'
   },
   {
+    title: 'Mart App',
+    description: 'E-commerce mockup website for SnapMart',
+    image: martImg,
+    githubUrl: 'https://github.com/khasmir04/snapmart',
+    liveUrl: 'https://snapmart-blond.vercel.app/'
+  },
+  {
     title: 'Game On',
     description: 'Gaming information website showcasing the use of React, Tailwind, Rapid API and other tools/libraries.',
     image: gamingInfo,
@@ -38,18 +46,18 @@ const data = [
     liveUrl: 'https://gaming-info-website-three.vercel.app/'
   },
   {
-    title: 'Valorant Memory Game',
-    description: 'Valorant-themed photo memory game implemented using basic Javascript',
-    image: valorantImg,
-    githubUrl: 'https://github.com/khasmir04/Valorant-Memory-Game',
-    liveUrl: 'https://www.khasmir.ml/Valorant-Memory-Game/public/index.html'
-  },
-  {
     title: '3D Model Viewer',
     description: 'A simple Model Viewer app using React and Three.js',
     image: modelViewerImg,
     githubUrl: 'https://github.com/khasmir04/model-viewer-react',
     liveUrl: 'https://model-viewer-react-drab.vercel.app/'
+  },
+  {
+    title: 'Valorant Memory Game',
+    description: 'Valorant-themed photo memory game implemented using basic Javascript',
+    image: valorantImg,
+    githubUrl: 'https://github.com/khasmir04/Valorant-Memory-Game',
+    liveUrl: 'https://www.khasmir.ml/Valorant-Memory-Game/public/index.html'
   },
 ]
 
