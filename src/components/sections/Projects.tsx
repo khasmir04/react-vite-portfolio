@@ -33,7 +33,7 @@ const data = [
   },
   {
     title: 'Mart App',
-    description: 'E-commerce mockup website for SnapMart',
+    description: 'E-commerce mockup website for SnapMart using tailwind, nextjs.',
     image: martImg,
     githubUrl: 'https://github.com/khasmir04/snapmart',
     liveUrl: 'https://snapmart-blond.vercel.app/'
@@ -47,14 +47,14 @@ const data = [
   },
   {
     title: '3D Model Viewer',
-    description: 'A simple Model Viewer app using React and Three.js',
+    description: 'A simple application to view 3D objects using React and Three.js.',
     image: modelViewerImg,
     githubUrl: 'https://github.com/khasmir04/model-viewer-react',
     liveUrl: 'https://model-viewer-react-drab.vercel.app/'
   },
   {
     title: 'Valorant Memory Game',
-    description: 'Valorant-themed photo memory game implemented using basic Javascript',
+    description: 'Valorant-themed photo memory game implemented using basic Javascript.',
     image: valorantImg,
     githubUrl: 'https://github.com/khasmir04/Valorant-Memory-Game',
     liveUrl: 'https://www.khasmir.ml/Valorant-Memory-Game/public/index.html'
