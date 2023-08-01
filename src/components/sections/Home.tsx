@@ -13,8 +13,9 @@ const StyledContainer = styled.div`
 const SpecialText = styled.span`
   color: #eb8258;
 `
-
-// THIS IS NOT HOME, ABOUT IS HOME
+/**
+ * @deprecated Home is already included in About
+ */
 const Home = () => {
   return (
     <StyledContainer id='' className='flex-col-reverse md:flex-row md:h-[calc(100vh-80px)]'>
