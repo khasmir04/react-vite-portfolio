@@ -14,7 +14,7 @@ const StyledContainer = styled.div`
 const Experience = () => {
   return (
     <StyledContainer id='experience' className='text-left'>
-      <PageTitle title='My Experiences' />
+      <PageTitle title='Experiences' />
       <div className='mt-9'>
         <ol className="relative border-l border-gray-200 border-gray-700">
           {experiences.map((item, key) => {
