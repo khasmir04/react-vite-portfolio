@@ -12,7 +12,7 @@ const StyledContainer = styled.div`
 const Contact = () => {
   return (
     <StyledContainer id='contact'>
-      <div className='py-8 lg:py-16 px-4 mx-auto max-w-screen-md'>
+      <div className='mx-auto max-w-screen-md py-8 px-4 lg:py-16'>
         <ContactForm />
       </div>
     </StyledContainer>

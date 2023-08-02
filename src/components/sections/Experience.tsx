@@ -13,10 +13,13 @@ const StyledContainer = styled.div`
 
 const Experience = () => {
   return (
-    <StyledContainer id='experience' className='text-left'>
+    <StyledContainer
+      id='experience'
+      className='text-left'
+    >
       <PageTitle title='Experiences' />
       <div className='mt-9'>
-        <ol className="relative border-l border-gray-200 border-gray-700">
+        <ol className='border-gray-200 border-gray-700 relative border-l'>
           {experiences.map((item, key) => {
             const { ...rest } = item
             return (

@@ -8,8 +8,8 @@ import Experience from './components/sections/Experience'
 import Projects from './components/sections/Projects'
 function App() {
   return (
-    <div className="App">
-      <ParticleBackground />
+    <div className='App'>
+      {/* <ParticleBackground /> */}
       <MainLayout>
         <About />
         <Projects />

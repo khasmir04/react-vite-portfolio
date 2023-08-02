@@ -6,7 +6,7 @@ export interface ButtonProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
 }
 
 const StyledButton = styled.a`
-  background-color:#eb8258;
+  background-color: #eb8258;
   font-size: 18px;
   font-weight: 500;
   padding: 6px 12px;
@@ -19,9 +19,7 @@ const StyledButton = styled.a`
 
 const Button = (props: ButtonProps) => {
   const { children, ...rest } = props
-  return (
-    <StyledButton {...rest} >{children}</StyledButton>
-  )
+  return <StyledButton {...rest}>{children}</StyledButton>
 }
 
 export default Button

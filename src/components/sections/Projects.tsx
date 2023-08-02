@@ -16,13 +16,19 @@ const Projects = () => {
   return (
     <StyledContainer id='projects'>
       <PageTitle title='Top Projects' />
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9 justify-around mt-9'>
+      <div className='mt-9 grid grid-cols-1 justify-around gap-9 md:grid-cols-2 lg:grid-cols-3'>
         {projects.map((project, key) => (
-          <Card key={key} {...project} />
+          <Card
+            key={key}
+            {...project}
+          />
         ))}
       </div>
       <div className='mt-9'>
-        <Button href='https://github.com/khasmir04?tab=repositories' target='_blank'>
+        <Button
+          href='https://github.com/khasmir04?tab=repositories'
+          target='_blank'
+        >
           See more of my projects...
         </Button>
       </div>
