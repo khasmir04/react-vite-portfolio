@@ -1,10 +1,6 @@
 import { useForm, ValidationError } from '@formspree/react'
 import styled from 'styled-components'
 
-const StyledDiv = styled.div`
-  padding: 4px;
-`
-
 const StyledButton = styled.button`
   padding: 4px 8px;
   color: white;
@@ -16,7 +12,7 @@ const ContactForm = () => {
   const [state, handleSubmit] = useForm('xlekwdqj')
   if (state.succeeded) {
     return (
-      <p className='text-white rounded-xl border border-[#EB8258] border-opacity-50 bg-custom-100 p-9 text-2xl shadow-lg'>
+      <p className='text-white rounded-xl border border-burnt-sienna border-opacity-50 bg-cod-gray p-9 text-2xl shadow-lg'>
         Thanks, I'll be getting in touch soon.
       </p>
     )
@@ -24,7 +20,7 @@ const ContactForm = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className='text-white flex flex-col space-y-8 rounded-xl border border-[#EB8258] border-opacity-50 bg-custom-100 p-9 shadow-lg'
+      className='text-white flex flex-col space-y-8 rounded-xl border border-burnt-sienna border-opacity-50 bg-cod-gray p-9 shadow-lg'
     >
       <h2 className='text-3xl'>Let's get connected</h2>
       <div>

@@ -10,7 +10,7 @@ const NavButton = (props: NavButtonProps) => {
   return (
     <a
       {...rest}
-      className='text-lg hover:text-[#EB8258]'
+      className='text-lg hover:text-burnt-sienna'
     >
       {children}
     </a>
