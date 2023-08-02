@@ -13,7 +13,7 @@ const Imp = styled.span`
 
 const experiences = [
   {
-    timeLine: <>AUGUST 2021 - Present & middot; 1 yr 8 mos</>,
+    timeLine: <>AUGUST 2021 - Present &middot; 1 yr 8 mos</>,
     position: 'MIDDLE SOFTWARE ENGINEER',
     company: <>TERP &middot; Full-time</>,
     description:
