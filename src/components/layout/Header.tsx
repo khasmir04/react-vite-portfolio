@@ -25,6 +25,7 @@ const StyledSpan = styled.span`
 
 const Header = () => {
   const [toggle, setToggle] = useState<boolean>(false)
+
   return (
     <>
       {/* DESKTOP */}
@@ -33,7 +34,7 @@ const Header = () => {
           <p className='text-3xl font-bold'>
             <StyledSpan>{`<`}</StyledSpan> Dev KJ<StyledSpan> {`>`}</StyledSpan>
           </p>
-          <ul className='flex justify-end gap-9 font-bold uppercase'>
+          <ul className='flex justify-end font-bold uppercase'>
             {/* <li>
               <NavButton href='#'>
                 <div className='flex items-center gap-2'>
@@ -44,7 +45,7 @@ const Header = () => {
             </li> */}
             <li>
               <NavButton href='#'>
-                <div className='flex items-center gap-2 text-xs'>
+                <div className='flex items-center gap-2 text-base font-semibold'>
                   <AiOutlineUser size={24} />
                   Home
                 </div>
@@ -52,7 +53,7 @@ const Header = () => {
             </li>
             <li>
               <NavButton href='#projects'>
-                <div className='flex items-center gap-2 text-xs'>
+                <div className='ml-9 flex items-center gap-2 text-base font-semibold'>
                   <AiOutlineFundProjectionScreen size={24} />
                   Projects
                 </div>
@@ -60,7 +61,7 @@ const Header = () => {
             </li>
             <li>
               <NavButton href='#experience'>
-                <div className='flex items-center gap-2 text-xs'>
+                <div className='ml-9 flex items-center gap-2 text-base font-semibold'>
                   <AiOutlineContacts size={24} />
                   Experience
                 </div>
@@ -68,7 +69,7 @@ const Header = () => {
             </li>
             <li>
               <NavButton href='#contact'>
-                <div className='flex items-center gap-2 text-xs'>
+                <div className='ml-9 flex items-center gap-2 text-base font-semibold'>
                   <AiOutlinePhone
                     size={24}
                     style={{ rotate: '90deg' }}

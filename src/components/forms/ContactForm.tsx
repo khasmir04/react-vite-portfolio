@@ -6,13 +6,17 @@ const StyledButton = styled.button`
   color: white;
   background-color: #eb8258;
   border-radius: 4px;
+  :hover {
+    background-color: #242424;
+    outline: 1px solid #eb8258;
+  }
 `
 
 const ContactForm = () => {
   const [state, handleSubmit] = useForm('xlekwdqj')
   if (state.succeeded) {
     return (
-      <p className='text-white rounded-xl border border-burnt-sienna border-opacity-50 bg-cod-gray p-9 text-2xl shadow-lg'>
+      <p className='rounded-xl border border-burnt-sienna border-opacity-50 bg-cod-gray p-9 text-2xl text-white shadow-lg'>
         Thanks, I'll be getting in touch soon.
       </p>
     )
@@ -20,13 +24,13 @@ const ContactForm = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className='text-white flex flex-col space-y-8 rounded-xl border border-burnt-sienna border-opacity-50 bg-cod-gray p-9 shadow-lg'
+      className='flex flex-col space-y-8 rounded-xl border border-burnt-sienna border-opacity-50 bg-cod-gray p-9 text-white shadow-lg'
     >
-      <h2 className='text-3xl'>Let's get connected</h2>
+      <h2 className='text-3xl'>Let's stay connected!</h2>
       <div>
         <label
           htmlFor='email'
-          className='text-gray-300 mb-2 block text-sm font-medium'
+          className='mb-2 block text-sm font-medium text-gray-300'
         >
           Your email
         </label>
@@ -34,7 +38,7 @@ const ContactForm = () => {
           type='email'
           id='email'
           name='email'
-          className='bg-gray-50 border-gray-300 text-gray-900 focus:ring-primary-500 focus:border-primary-500 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500 shadow-sm-light block w-full rounded-lg border p-2.5 text-sm shadow-sm'
+          className='focus:ring-primary-500 focus:border-primary-500 focus:ring-primary-500 focus:border-primary-500 shadow-sm-light block w-full rounded-lg border border-gray-300 border-gray-600 bg-gray-50 bg-gray-700 p-2.5 text-sm text-gray-900 text-white placeholder-gray-400 shadow-sm'
           placeholder='name@khasmir.com'
           required
         />
@@ -47,7 +51,7 @@ const ContactForm = () => {
       <div className='sm:col-span-2'>
         <label
           htmlFor='message'
-          className='text-gray-300 mb-2 block text-sm font-medium'
+          className='mb-2 block text-sm font-medium text-gray-300'
         >
           Your message
         </label>
@@ -55,7 +59,7 @@ const ContactForm = () => {
           id='message'
           name='message'
           rows={6}
-          className='text-gray-900 bg-gray-50 border-gray-300 focus:ring-primary-500 focus:border-primary-500 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500 block w-full rounded-lg border p-2.5 text-sm shadow-sm'
+          className='focus:ring-primary-500 focus:border-primary-500 focus:ring-primary-500 focus:border-primary-500 block w-full rounded-lg border border-gray-300 border-gray-600 bg-gray-50 bg-gray-700 p-2.5 text-sm text-gray-900 text-white placeholder-gray-400 shadow-sm'
           placeholder='Leave a comment...'
           defaultValue={''}
         />
@@ -69,7 +73,33 @@ const ContactForm = () => {
         type='submit'
         disabled={state.submitting}
       >
-        Send message
+        <div className='flex items-center justify-center'>
+          <span className='inline'>Send message</span>
+          {state.submitting && (
+            <span className='ml-2 inline'>
+              <svg
+                className='-ml-1 mr-3 h-5 w-5 animate-spin text-white'
+                xmlns='http://www.w3.org/2000/svg'
+                fill='none'
+                viewBox='0 0 24 24'
+              >
+                <circle
+                  className='opacity-25'
+                  cx='12'
+                  cy='12'
+                  r='10'
+                  stroke='currentColor'
+                  strokeWidth='4'
+                />
+                <path
+                  className='opacity-75'
+                  fill='currentColor'
+                  d='M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z'
+                />
+              </svg>
+            </span>
+          )}
+        </div>
       </StyledButton>
     </form>
   )

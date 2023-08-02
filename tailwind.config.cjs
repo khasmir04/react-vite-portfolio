@@ -21,7 +21,7 @@ module.exports = {
         image_morph: "default_morph 8s ease-in-out infinite",
       },
       fontFamily: {
-        league: ['League Spartan', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
       },
     },
     colors: {

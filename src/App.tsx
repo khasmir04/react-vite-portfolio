@@ -8,7 +8,7 @@ import Experience from './components/sections/Experience'
 import Projects from './components/sections/Projects'
 function App() {
   return (
-    <div className='App font-league'>
+    <div className='App font-poppins'>
       {/* <ParticleBackground /> */}
       <MainLayout>
         <About />

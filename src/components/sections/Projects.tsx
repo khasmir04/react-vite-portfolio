@@ -28,6 +28,7 @@ const Projects = () => {
         <Button
           href='https://github.com/khasmir04?tab=repositories'
           target='_blank'
+          className='border border-burnt-sienna text-base'
         >
           See more of my projects...
         </Button>
