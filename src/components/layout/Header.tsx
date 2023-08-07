@@ -31,9 +31,12 @@ const Header = () => {
       {/* DESKTOP */}
       <nav className='fixed z-10 hidden h-[80px] w-full bg-mine-shaft p-5 shadow-lg md:block'>
         <div className='container m-auto flex items-center justify-between'>
-          <p className='text-3xl font-bold'>
+          <a
+            href='#'
+            className='text-3xl font-bold'
+          >
             <StyledSpan>{`<`}</StyledSpan> Dev KJ<StyledSpan> {`>`}</StyledSpan>
-          </p>
+          </a>
           <ul className='flex justify-end font-bold uppercase'>
             {/* <li>
               <NavButton href='#'>
@@ -82,9 +85,14 @@ const Header = () => {
         </div>
       </nav>
       {/* MOBILE */}
-      <nav className='z-10 rounded bg-mine-shaft px-2 py-2.5 shadow-lg sm:px-4 md:hidden'>
+      <nav className='fixed z-10 w-full rounded bg-mine-shaft px-2 py-2.5 shadow-lg sm:px-4 md:hidden'>
         <div className='container mx-auto flex flex-wrap items-center justify-between'>
-          <p className='text-3xl'>{`< Dev KJ >`}</p>
+          <a
+            href='#'
+            className='text-3xl font-bold'
+          >
+            <StyledSpan>{`<`}</StyledSpan> Dev KJ<StyledSpan> {`>`}</StyledSpan>
+          </a>
           <button
             data-collapse-toggle='navbar-default'
             type='button'

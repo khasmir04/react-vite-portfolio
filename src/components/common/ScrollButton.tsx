@@ -3,19 +3,9 @@ import { useState } from 'react'
 import { FaArrowCircleUp } from 'react-icons/fa'
 import styled from 'styled-components'
 
-const Heading = styled.h1`
-  text-align: center;
-  color: green;
-`
-
-const Content = styled.div`
-  overflow-y: scroll;
-  height: 2500px;
-`
-
 const Button = styled.div`
   position: fixed;
-  width: 100%;
+  right: 3rem;
   bottom: 40px;
   font-size: 3rem;
   z-index: 1;
@@ -56,7 +46,8 @@ const ScrollButton = () => {
       >
         <FaArrowCircleUp
           onClick={scrollToTop}
-          style={{ display: visible ? 'inline' : 'none', cursor: 'pointer' }}
+          className='cursor-pointer rounded-full border-2'
+          style={{ display: visible ? 'inline' : 'none' }}
         />
       </motion.div>
     </Button>

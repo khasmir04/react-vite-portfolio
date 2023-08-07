@@ -7,8 +7,6 @@ import projects from '../../data/projects'
 
 const StyledContainer = styled.div`
   margin: auto;
-  /* display: flex; */
-  /* height: 100vh; */
   padding: 24px;
 `
 

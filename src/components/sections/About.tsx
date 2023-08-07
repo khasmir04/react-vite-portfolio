@@ -4,68 +4,77 @@ import Button from '../common/Button'
 import image from './../../assets/me.jpg'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
+import { AiOutlineDownload } from 'react-icons/ai'
 
 const StyledContainer = styled.div`
   margin: auto;
   display: flex;
   justify-content: center;
-  padding: 24px;
-`
-
-const SpecialText = styled.span`
-  color: #eb8258;
 `
 
 const About = () => {
-  const [ref, inView] = useInView()
+  const [imageRef, inView] = useInView()
   return (
     <StyledContainer
-      id=''
-      className='flex-col-reverse md:h-screen md:flex-row'
+      id='about'
+      className='h-screen flex-col-reverse p-6 md:flex-row md:p-6'
     >
-      <div className='flex flex-auto flex-col justify-center gap-9 text-left text-3xl md:w-1/2 md:text-7xl'>
-        <p style={{ whiteSpace: 'pre-line' }}>
-          I'm <SpecialText className='text-4xl md:text-7xl'>Dev KJ</SpecialText>
-          ,{'\n'}a <SpecialText>Frontend Developer</SpecialText>
-        </p>
-        <p className='text-xl font-extralight'>
-          Hello, I'm <b>Khasmir Jhon Caluscusao</b>. A very passionate Front-end
-          React Developer based in Philippines.
-        </p>
-        <p className='text-xl font-extralight'>
-          I have a passion for creating beautiful and functional websites. Have
-          a strong background in <b>HTML</b>, <b>CSS</b>, <b>TypeScript</b> and{' '}
-          <b>JavaScript</b>. I also have experience with <b>React</b>,{' '}
-          <b>Next.js</b>, <b>Express</b>, <b>MongoDB</b> and <b>Tailwind CSS</b>
-          .
-        </p>
-        <div className='flex items-center text-base'>
-          <Button
-            href='#projects'
-            className='text-bas mr-4 border border-burnt-sienna'
+      <div className='flex text-left md:w-3/5'>
+        <motion.div className='my-auto'>
+          <div
+            className='mb-9 text-4xl md:text-6xl'
+            style={{ whiteSpace: 'pre-line' }}
           >
-            See my work
-          </Button>
-          <a
-            href='https://github.com/khasmir04'
-            target='_blank'
-            className='mr-4 text-3xl transition ease-in-out hover:scale-125'
-          >
-            <BsGithub />
-          </a>
-          <a
-            href='https://www.linkedin.com/in/khasmir/'
-            target='_blank'
-            className='text-3xl transition ease-in-out hover:scale-125'
-          >
-            <BsLinkedin />
-          </a>
-        </div>
+            <p>Khasmir Caluscusao</p>
+            <p className='text-3xl text-burnt-sienna'>Frontend Developer</p>
+          </div>
+          <p className='mb-9 text-xl font-extralight'>
+            I'm a very passionate Front-end React Developer based in
+            Philippines.
+          </p>
+          <p className='mb-9 text-xl font-extralight'>
+            I have a passion for creating beautiful and functional websites.
+            Have a strong background in <b>HTML</b>, <b>CSS</b>,{' '}
+            <b>TypeScript</b> and <b>JavaScript</b>. I also have experience with{' '}
+            <b>React</b>, <b>Next.js</b>, <b>Express</b>, <b>MongoDB</b> and{' '}
+            <b>Tailwind CSS</b>.
+          </p>
+          <div className='flex items-center text-base'>
+            <a
+              href='https://github.com/khasmir04'
+              target='_blank'
+              className='mr-4 text-3xl transition ease-in-out hover:scale-125'
+            >
+              <BsGithub />
+            </a>
+            <a
+              href='https://www.linkedin.com/in/khasmir/'
+              target='_blank'
+              className='mr-4 text-3xl transition ease-in-out hover:scale-125'
+            >
+              <BsLinkedin />
+            </a>
+            <Button
+              href='/public/docs/CV080323.pdf'
+              className='mr-4 border border-burnt-sienna'
+            >
+              <span className='flex items-center'>
+                Download CV
+                <AiOutlineDownload
+                  className='ml-2 inline'
+                  size={24}
+                  fontWeight='bold'
+                />
+              </span>
+            </Button>
+          </div>
+        </motion.div>
       </div>
-      <div className='m-auto flex w-4/5 flex-auto items-center justify-center p-6 md:w-1/2'>
+      <div className='m-auto flex flex-auto items-center justify-center p-6 md:w-2/5'>
         <div>
+          {/* Removed w-[500px] */}
           <motion.img
-            ref={ref}
+            ref={imageRef}
             initial='hidden'
             animate={inView ? 'visible' : 'hidden'}
             variants={{
@@ -75,7 +84,7 @@ const About = () => {
             transition={{ duration: 1 }}
             src={image}
             alt='Image of Dev KJ'
-            className='w-[500px] animate-image_morph rounded-full'
+            className='animate-image_morph rounded-full'
           />
         </div>
       </div>
