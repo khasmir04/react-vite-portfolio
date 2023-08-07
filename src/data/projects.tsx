@@ -12,7 +12,7 @@ const projects = [
       'Responsive Web Design (mobile-first approach) using purely HTML and CSS.',
     image: cusinaImg,
     githubUrl: 'https://github.com/khasmir04/Cusina',
-    liveUrl: 'https://www.khasmir.ml/Cusina/',
+    liveUrl: 'https://www.khasmir.top/Cusina/'
   },
   {
     title: 'EduKa',
@@ -52,7 +52,7 @@ const projects = [
       'Valorant-themed photo memory game implemented using basic Javascript.',
     image: valorantImg,
     githubUrl: 'https://github.com/khasmir04/Valorant-Memory-Game',
-    liveUrl: 'https://www.khasmir.ml/Valorant-Memory-Game/public/index.html',
+    liveUrl: 'https://www.khasmir.top/Valorant-Memory-Game/public/index.html'
   },
 ]
 
