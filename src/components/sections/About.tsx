@@ -56,6 +56,7 @@ const About = () => {
             </a>
             <Button
               href='/docs/CV080323.pdf'
+              target='_blank'
               className='mr-4 border border-burnt-sienna'
             >
               <span className='flex items-center'>
