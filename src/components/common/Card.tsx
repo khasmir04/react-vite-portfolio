@@ -10,14 +10,13 @@ interface CardProps {
 }
 
 const StyledLink = styled.a`
-  background-color: #1b1919;
   border: 1px solid #878787;
 `
 
 const Card = (props: CardProps) => {
   const { title, description, image, githubUrl, liveUrl } = props
   return (
-    <div className='mx-auto max-w-lg rounded-lg border border-gray-200 border-gray-700 bg-[#0c0b0b90] text-left shadow'>
+    <div className='mx-auto max-w-lg rounded-lg border border-gray-200 border-gray-700 bg-cod-gray text-left shadow'>
       <div>
         <a href={liveUrl}>
           <img
@@ -36,7 +35,7 @@ const Card = (props: CardProps) => {
           <StyledLink
             href={githubUrl}
             target='_blank'
-            className='inline-flex items-center rounded-lg bg-blue-700 bg-blue-600 px-3 py-2 text-center text-sm font-medium text-white hover:bg-blue-800 hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 focus:ring-blue-800'
+            className='inline-flex items-center rounded-lg bg-cod-gray px-3 py-2 text-center text-sm font-medium text-white hover:bg-burnt-sienna-700 focus:outline-none focus:ring-4 focus:ring-blue-300 focus:ring-blue-800'
           >
             Github
             <HiExternalLink style={{ fontSize: '18px', marginLeft: '4px' }} />
@@ -44,7 +43,7 @@ const Card = (props: CardProps) => {
           <StyledLink
             href={liveUrl}
             target='_blank'
-            className='ml-2 inline-flex items-center rounded-lg bg-blue-700 bg-blue-600 px-3 py-2 text-center text-sm font-medium text-white hover:bg-blue-800 hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 focus:ring-blue-800'
+            className='ml-2 inline-flex items-center rounded-lg bg-cod-gray px-3 py-2 text-center text-sm font-medium text-white hover:bg-burnt-sienna-700 focus:outline-none focus:ring-4 focus:ring-blue-300 focus:ring-blue-800'
           >
             Live
             <HiExternalLink style={{ fontSize: '18px', marginLeft: '4px' }} />

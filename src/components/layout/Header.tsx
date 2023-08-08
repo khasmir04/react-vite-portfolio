@@ -29,7 +29,7 @@ const Header = () => {
   return (
     <>
       {/* DESKTOP */}
-      <nav className='fixed z-10 hidden h-[80px] w-full bg-mine-shaft p-5 shadow-lg md:block'>
+      <nav className='fixed top-0 z-10 hidden h-[80px] w-full bg-mine-shaft p-5 shadow-lg md:block'>
         <div className='container m-auto flex items-center justify-between'>
           <a
             href='#'
@@ -85,7 +85,7 @@ const Header = () => {
         </div>
       </nav>
       {/* MOBILE */}
-      <nav className='fixed z-10 w-full rounded bg-mine-shaft px-2 py-2.5 shadow-lg sm:px-4 md:hidden'>
+      <nav className='fixed top-0 z-10 w-full rounded bg-mine-shaft px-2 py-2.5 shadow-lg sm:px-4 md:hidden'>
         <div className='container mx-auto flex flex-wrap items-center justify-between'>
           <a
             href='#'
