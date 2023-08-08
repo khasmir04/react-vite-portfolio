@@ -16,9 +16,9 @@ const About = () => {
   return (
     <StyledContainer
       id='about'
-      className='mx-auto mt-20 h-full flex-col-reverse p-6 md:flex-row md:p-6'
+      className='mx-auto mt-20 h-full flex-col-reverse p-6 md:h-[calc(100vh-5rem)] md:flex-row md:p-6'
     >
-      <div className='flex text-left md:w-3/5'>
+      <div className='flex md:w-3/5 md:text-left'>
         <motion.div className='my-auto'>
           <div
             className='mb-9 text-4xl md:text-6xl'
@@ -28,15 +28,15 @@ const About = () => {
             <p className='text-3xl text-burnt-sienna'>Frontend Developer</p>
           </div>
           <p className='mb-9 text-xl font-extralight'>
-            I'm a very passionate Front-end React Developer based in
-            Philippines.
+            I'm a dedicated Front-end React Developer based in the Philippines,
+            with a keen interest in crafting visually appealing and functional
+            websites.
           </p>
           <p className='mb-9 text-xl font-extralight'>
-            I have a passion for creating beautiful and functional websites.
-            Have a strong background in <b>HTML</b>, <b>CSS</b>,{' '}
-            <b>TypeScript</b> and <b>JavaScript</b>. I also have experience with{' '}
-            <b>React</b>, <b>Next.js</b>, <b>Express</b>, <b>MongoDB</b> and{' '}
-            <b>Tailwind CSS</b>.
+            My expertise includes a solid foundation in <b>HTML</b>, <b>CSS</b>,{' '}
+            <b>TypeScript</b> and <b>JavaScript</b>, along with hands-on
+            experience in <b>React</b>, <b>Next.js</b>, <b>Express</b>,{' '}
+            <b>MongoDB</b> and <b>Tailwind CSS</b>.
           </p>
           <div className='flex items-center text-base'>
             <a
@@ -84,7 +84,7 @@ const About = () => {
             transition={{ duration: 1 }}
             src={image}
             alt='Image of Dev KJ'
-            className='animate-image_morph rounded-full'
+            className='w-[30vh] animate-image_morph rounded-full md:w-full'
           />
         </div>
       </div>
