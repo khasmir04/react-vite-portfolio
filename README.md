@@ -1,4 +1,6 @@
-<!-- Packages -->
+# Welcome to My Portfolio
+
+## Technologies in this project
 
 React
 Typescript
@@ -7,10 +9,9 @@ Tailwind
 Styled Components
 React Icons
 
-<!-- Colors used: -->
+## Colors
 
-<!-- #242424 : Background -->
-<!-- #1b1919 : Container -->
-<!-- #e5e7eb : Font-->
-#6320EE
-#EB8258
+`#242424` : Mine-Shaft
+`#1b1919` : Cod-Gray
+`#EB8258` : Burnt-Sienna
+`#e5e7eb` : Font

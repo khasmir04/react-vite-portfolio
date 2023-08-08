@@ -1,5 +1,9 @@
 import styled from 'styled-components'
-import { AiOutlineHome, AiOutlineUser, AiOutlineFundProjectionScreen } from 'react-icons/ai'
+import {
+  AiOutlineHome,
+  AiOutlineUser,
+  AiOutlineFundProjectionScreen,
+} from 'react-icons/ai'
 import { BsGithub, BsBriefcase, BsTelephone } from 'react-icons/bs'
 import { HiExternalLink } from 'react-icons/hi'
 
@@ -21,22 +25,34 @@ const StyledAnchor = styled.a`
 `
 
 const Labels = {
-  'github': 'Github',
-  'about': 'About',
-  'projects': 'Projects',
-  'experience': 'Experience',
-  'contact': 'Contact'
+  github: 'Github',
+  about: 'About',
+  projects: 'Projects',
+  experience: 'Experience',
+  contact: 'Contact',
 }
 
-const SideBar = (props: { isLabeled: boolean, handleEnter: () => void, handleLeave: () => void }) => {
+const SideBar = (props: {
+  isLabeled: boolean
+  handleEnter: () => void
+  handleLeave: () => void
+}) => {
   const { isLabeled, handleEnter, handleLeave } = props
   return (
-    <StyledContainer className='hidden md:flex fixed' onMouseEnter={handleEnter} onMouseLeave={handleLeave}>
+    <StyledContainer
+      className='fixed hidden md:flex'
+      onMouseEnter={handleEnter}
+      onMouseLeave={handleLeave}
+    >
       <div className='text-5xl'>{isLabeled ? '< KJ />' : 'KJ'}</div>
       <div className='m-auto'>
         <ul className='flex flex-col gap-[46px] text-2xl'>
           <li>
-            <StyledAnchor href='https://github.com/khasmir04' target='_blank'><BsGithub />
+            <StyledAnchor
+              href='https://github.com/khasmir04'
+              target='_blank'
+            >
+              <BsGithub />
               {isLabeled && Labels['github']}
               {isLabeled && <HiExternalLink />}
             </StyledAnchor>
