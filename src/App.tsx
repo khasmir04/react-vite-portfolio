@@ -6,9 +6,10 @@ import About from './components/sections/About'
 import Contact from './components/sections/Contact'
 import Experience from './components/sections/Experience'
 import Projects from './components/sections/Projects'
+
 function App() {
   return (
-    <div className='App font-poppins'>
+    <div className='font-poppins'>
       {/* <ParticleBackground /> */}
       <MainLayout>
         <About />
@@ -16,7 +17,6 @@ function App() {
         <Experience />
         <Contact />
       </MainLayout>
-      <ScrollButton />
     </div>
   )
 }

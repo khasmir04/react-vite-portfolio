@@ -8,8 +8,10 @@
   font-weight: 400;
 
   /* TODO: Remove these and enable dark mode capabilities */
-  color-scheme: light dark;
   /* color: rgba(255, 255, 255, 0.87); */
+  /* color-scheme: light dark; */
+
+  color: #ffffff;
   background-color: #242424;
 
   font-synthesis: none;

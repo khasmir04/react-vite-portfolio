@@ -9,7 +9,6 @@ const Button = styled.div`
   bottom: 40px;
   font-size: 3rem;
   z-index: 1;
-  color: #eb8258;
 `
 
 const ScrollButton = () => {
@@ -46,7 +45,7 @@ const ScrollButton = () => {
       >
         <FaArrowCircleUp
           onClick={scrollToTop}
-          className='cursor-pointer rounded-full border-2'
+          className='cursor-pointer rounded-full border-2 text-burnt-sienna'
           style={{ display: visible ? 'inline' : 'none' }}
         />
       </motion.div>
