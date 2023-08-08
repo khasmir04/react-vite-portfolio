@@ -16,7 +16,7 @@ const About = () => {
   return (
     <StyledContainer
       id='about'
-      className='mx-auto mt-20  h-[calc(100vh-5rem)] flex-col-reverse p-6 md:flex-row md:p-6'
+      className='mx-auto mt-20 h-full flex-col-reverse p-6 md:flex-row md:p-6'
     >
       <div className='flex text-left md:w-3/5'>
         <motion.div className='my-auto'>
