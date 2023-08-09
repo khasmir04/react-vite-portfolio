@@ -18,17 +18,33 @@ const SpecialText = styled.span`
  */
 const Home = () => {
   return (
-    <StyledContainer id='' className='flex-col-reverse md:flex-row md:h-[calc(100vh-80px)]'>
-      <div className='flex-auto md:w-3/5 text-7xl text-left flex flex-col justify-center gap-9'>
-        <p style={{ whiteSpace: 'pre-line' }}>Hello,{"\n"}I'm <SpecialText>Dev KJ</SpecialText>,{"\n"}a <SpecialText>Frontend Developer</SpecialText></p>
+    <StyledContainer
+      id=''
+      className='flex-col-reverse md:h-[calc(100vh-80px)] md:flex-row'
+    >
+      <div className='flex flex-auto flex-col justify-center gap-9 text-left text-7xl md:w-3/5'>
+        <p style={{ whiteSpace: 'pre-line' }}>
+          Hello,{'\n'}I'm <SpecialText>Dev KJ</SpecialText>,{'\n'}a{' '}
+          <SpecialText>Frontend Developer</SpecialText>
+        </p>
         <div className='text-base'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla expedita beatae ipsam voluptas impedit dolorum praesentium, ipsum minima officiis soluta.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+          expedita beatae ipsam voluptas impedit dolorum praesentium, ipsum
+          minima officiis soluta.
         </div>
-        <Button href='#projects' className='text-base self-start'>See my work</Button>
+        <Button
+          href='#projects'
+          className='self-start text-base'
+        >
+          See my work
+        </Button>
       </div>
-      <div className='flex-auto w-3/5 md:w-2/5 p-6 flex items-center justify-center m-auto'>
+      <div className='m-auto flex w-3/5 flex-auto items-center justify-center p-6 md:w-2/5'>
         <div>
-          <img src={image} alt="Image of Dev KJ" />
+          <img
+            src={image}
+            alt='Image of Dev KJ'
+          />
         </div>
       </div>
     </StyledContainer>

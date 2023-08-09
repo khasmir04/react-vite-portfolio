@@ -1,26 +1,25 @@
 import { AnchorHTMLAttributes, ReactNode } from 'react'
 import styled from 'styled-components'
+import { twMerge } from 'tailwind-merge'
 
 export interface ButtonProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   children: ReactNode
 }
 
-const StyledButton = styled.a`
-  background-color:#eb8258;
-  font-size: 18px;
-  font-weight: 500;
-  padding: 6px 12px;
-  border-radius: 6px;
-  :hover {
-    background-color: #1b1919;
-    border: 1px solid white;
-  }
-`
-
 const Button = (props: ButtonProps) => {
-  const { children, ...rest } = props
+  const { children, className, ...rest } = props
+  const merged = twMerge(
+    'bg-burnt-sienna text-base px-2 py-1 hover:bg-cod-gray hover:border hover:border-white rounded',
+    className
+  )
+
   return (
-    <StyledButton {...rest} >{children}</StyledButton>
+    <a
+      className={merged}
+      {...rest}
+    >
+      {children}
+    </a>
   )
 }
 

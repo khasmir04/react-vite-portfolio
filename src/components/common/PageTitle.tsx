@@ -1,7 +1,18 @@
-const PageTitle = (props: { title: string }) => {
-  const { title } = props
+import { HTMLAttributes } from 'react'
+
+export interface PageTitleProps extends HTMLAttributes<HTMLHeadingElement> {
+  title: string
+}
+
+const PageTitle = (props: PageTitleProps) => {
+  const { title, ...rest } = props
   return (
-    <h2 className='text-3xl'>{title}</h2>
+    <h2
+      {...rest}
+      className='text-3xl'
+    >
+      {title}
+    </h2>
   )
 }
 
