@@ -54,7 +54,7 @@ const About = () => {
               <BsLinkedin />
             </a>
             <Button
-              href='/docs/CV080323.pdf'
+              href='/docs/CV071924.pdf'
               target='_blank'
               className='mr-4 border border-burnt-sienna'
             >
