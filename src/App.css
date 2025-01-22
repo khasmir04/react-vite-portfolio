@@ -7,7 +7,19 @@
 
 html,
 body,
-#app,
-#app > div {
+#root {
   height: 100%;
 }
+
+.glare {
+  position: fixed;
+  overflow: hidden;
+  width: 170%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(27, 0, 133, 0.3) 0%, rgba(22, 0, 109, 0) 50%);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: screen;
+  z-index: 10;
+ }

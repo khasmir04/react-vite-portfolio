@@ -13,8 +13,8 @@ const StyledContainer = styled.div`
 const Projects = () => {
   return (
     <StyledContainer id='projects'>
-      <PageTitle title='Top Projects' />
-      <div className='mt-9 grid grid-cols-1 justify-around gap-9 md:grid-cols-2 lg:grid-cols-3'>
+      <PageTitle title='Projects' />
+      <div className='mt-11 md:px-24 grid grid-cols-1 justify-around gap-9 md:gap-16 md:grid-cols-2 lg:grid-cols-3'>
         {projects.map((project, key) => (
           <Card
             key={key}
