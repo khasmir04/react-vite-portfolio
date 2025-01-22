@@ -40,7 +40,7 @@ const StarsCanvas = () => {
     return (
         <div
             id="stars-canvas"
-            className="absolute inset-0 -z-10 h-full w-full"
+            className="fixed inset-0 -z-10 h-full w-full"
         >
             <Canvas camera={{ position: [0, 0, 1] }}>
                 <Suspense fallback={null}>
