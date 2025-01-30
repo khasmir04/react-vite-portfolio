@@ -764,7 +764,7 @@
     "@types/react" "*"
     csstype "^3.0.2"
 
-"@types/three@*":
+"@types/three@*", "@types/three@^0.172.0":
   version "0.172.0"
   resolved "https://registry.yarnpkg.com/@types/three/-/three-0.172.0.tgz#5094852dfa781d2fe1c65eb1b4985a4aa99858b7"
   integrity sha512-LrUtP3FEG26Zg5WiF0nbg8VoXiKokBLTcqM2iLvM9vzcfEiYmmBAPGdBgV0OYx9fvWlY3R/3ERTZcD9X5sc0NA==

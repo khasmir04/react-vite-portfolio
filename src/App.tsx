@@ -1,5 +1,6 @@
 import './App.css'
-// import GlareEffect from './components/common/Glare'
+import GrainEffect from './components/common/Grain'
+import GlareEffect from './components/common/Glare'
 // import ParticleBackground from './components/common/ParticleBackground'
 // import ScrollButton from './components/common/ScrollButton'
 import StarsCanvas from './components/common/StarsCanvas'
@@ -15,6 +16,7 @@ function App() {
       <StarsCanvas />
       {/* <ParticleBackground /> */}
       {/* <GlareEffect /> */}
+      {/* <GrainEffect /> */}
       <MainLayout>
         <About />
         <Projects />

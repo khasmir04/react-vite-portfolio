@@ -1,8 +1,14 @@
 import styled from 'styled-components'
+import terpImg from '../assets/img/icons/terp.png'
+import telfordImg from '../assets/img/icons/telford.png'
+import cloudswyftImg from '../assets/img/icons/cloudswyft.png'
+import kodegoImg from '../assets/img/icons/kodego.png'
+import prulifeukImg from '../assets/img/icons/prulifeuk.png'
+import vertereImg from '../assets/img/icons/vertere.png'
 
 const StyledDescription = styled.div`
   font-size: 1.2rem;
-  font-weight: 400;
+  font-weight: 200;
   line-height: 1.5;
   color: #e5e7eb;
 `
@@ -11,9 +17,84 @@ const Imp = styled.span`
   color: #eb8258;
 `
 
+const computeDuration = (startDateStr: string) => {
+  const startDate = new Date(startDateStr)
+  const currentDate = new Date()
+
+  let years = currentDate.getFullYear() - startDate.getFullYear()
+  let months = currentDate.getMonth() - startDate.getMonth()
+
+  if (months < 0) {
+    years -= 1
+    months += 12
+  }
+
+  let result = ''
+  if (years > 0) {
+    result += `${years} yr `
+  }
+  result += `${months} mos`
+
+  return result.trim()
+}
+
 const experiences = [
   {
-    timeLine: <>AUGUST 2021 - Present &middot; 1 yr 8 mos</>,
+    timeLine: <>June 2024 - Present &middot; {computeDuration('June 2024')}</>,
+    position: 'Full Stack Engineer',
+    company: <>Pru Life UK &middot; Full-time</>,
+    description: (
+      <StyledDescription>
+        Full Stack Engineer providing solutions and support to other teams.
+        <ul className='ml-4 list-disc text-lg'>
+          <li>
+            <Imp>Migrate existing services</Imp> to improve processing documents, emails, and SMS.
+          </li>
+          <li>
+            <Imp>Create packages</Imp> to be used by different applications.
+          </li>
+          <li>
+            Develop <Imp>service integrations</Imp> for seamless operation within the company
+            ecosystem.
+          </li>
+          <li>
+            Provide <Imp>support</Imp> to other team’s development.
+          </li>
+        </ul>
+      </StyledDescription>
+    ),
+    logo: prulifeukImg,
+  },
+  {
+    timeLine: <>SEPTEMBER 2023 - May 2024 &middot; 8 mos</>,
+    position: 'Programmer/Analyst, S2',
+    company: <>Vertere Global Solutions, Inc. &middot; Contract</>,
+    description: (
+      <StyledDescription>
+        Worked as engineer to provide solutions.
+        <ul className='ml-4 list-disc text-lg'>
+          <li>
+            Build an <Imp>EKYC application</Imp>, integrating third-party APIs end-to-end.
+          </li>
+          <li>
+            Design and implement <Imp>custom components</Imp> to enhance application functionality.
+          </li>
+          <li>
+            Contribute to <Imp>sprint planning</Imp> sessions utilizing JIRA.
+          </li>
+          <li>
+            Maintain up-to-date <Imp>documentation</Imp> for ongoing application development.
+          </li>
+          <li>
+            Propose <Imp>techniques and technologies</Imp> to optimize the codebase.
+          </li>
+        </ul>
+      </StyledDescription>
+    ),
+    logo: vertereImg,
+  },
+  {
+    timeLine: <>AUGUST 2021 - June 2023 &middot; 1 yr 10 mos</>,
     position: 'MIDDLE SOFTWARE ENGINEER',
     company: <>TERP &middot; Full-time</>,
     description: (
@@ -27,8 +108,8 @@ const experiences = [
             Use <Imp>TypeScript</Imp> as main scripting language for development
           </li>
           <li>
-            Create components using <Imp>tsx</Imp>,{' '}
-            <Imp>styled-components, html</Imp> and <Imp>css</Imp>
+            Create components using <Imp>tsx</Imp>, <Imp>styled-components, html</Imp> and{' '}
+            <Imp>css</Imp>
           </li>
           <li>
             Update <Imp>documentation</Imp> for API types
@@ -45,6 +126,7 @@ const experiences = [
         </ul>
       </StyledDescription>
     ),
+    logo: terpImg,
   },
   {
     timeLine: <>April 2021 - July 2021 &middot; 4 mos</>,
@@ -65,8 +147,7 @@ const experiences = [
             <Imp>Tailwind CSS</Imp>
           </li>
           <li>
-            Backend development using <Imp>NodeJS, ExpressJS</Imp> and{' '}
-            <Imp>MongoDB</Imp>.
+            Backend development using <Imp>NodeJS, ExpressJS</Imp> and <Imp>MongoDB</Imp>.
           </li>
           <li>
             Developed a web application for a client using <Imp>NextJS</Imp> and{' '}
@@ -75,6 +156,7 @@ const experiences = [
         </ul>
       </StyledDescription>
     ),
+    logo: kodegoImg,
   },
   {
     timeLine: <>February 2020 - May 2020 &middot; 4 mos</>,
@@ -88,8 +170,7 @@ const experiences = [
             Use <Imp>Angular</Imp> to create components
           </li>
           <li>
-            Apply knowledge on <Imp>HTML</Imp> and <Imp>CSS</Imp> to develop web
-            application
+            Apply knowledge on <Imp>HTML</Imp> and <Imp>CSS</Imp> to develop web application
           </li>
           <li>
             Participate in daily <Imp>meeting</Imp>
@@ -97,6 +178,7 @@ const experiences = [
         </ul>
       </StyledDescription>
     ),
+    logo: cloudswyftImg,
   },
   {
     timeLine: <> May 2013 - April 2016 &middot; 3 yrs</>,
@@ -118,6 +200,7 @@ const experiences = [
         </ul>
       </StyledDescription>
     ),
+    logo: telfordImg,
   },
 ]
 

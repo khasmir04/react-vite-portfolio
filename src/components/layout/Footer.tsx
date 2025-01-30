@@ -12,9 +12,7 @@ const Footer = () => {
         <p className='mb-4 text-3xl font-bold md:mr-auto'>
           <StyledSpan>{`</`}</StyledSpan> Dev KJ<StyledSpan> {`>`}</StyledSpan>
         </p>
-        <p className='text-center text-gray-500'>
-          Copyright &copy; {currentYear}
-        </p>
+        <p className='text-center text-gray-500'>&copy; {currentYear}</p>
         <p className='text-center text-gray-500'>Khasmir Jhon Caluscusao</p>
       </div>
     </div>

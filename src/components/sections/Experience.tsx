@@ -16,9 +16,12 @@ const Experience = () => {
       id='experience'
       className='text-left'
     >
-      <PageTitle title='Experiences' />
-      <div className='mt-9'>
-        <ol className='relative border-l border-gray-200 border-gray-700'>
+      <PageTitle
+        title='Experiences'
+        className='top-20 left-0 text-center lg:sticky lg:text-left'
+      />
+      <div className='mt-9 lg:mt-0'>
+        <ol className='relative border-l-2 border-white/60 lg:ml-80'>
           {experiences.map((item, key) => {
             const { ...rest } = item
             return (

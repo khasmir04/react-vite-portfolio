@@ -5,10 +5,14 @@ const StyledButton = styled.button`
   padding: 4px 8px;
   color: white;
   background-color: #eb8258;
-  border-radius: 4px;
+  border-radius: 2px;
+  border: 1px solid transparent;
+  outline: 1px solid transparent;
+  transition: all 0.5s;
   :hover {
-    background-color: #242424;
+    background-color: rgb(255 255 255 / 0.1);
     outline: 1px solid #eb8258;
+    border: 1px solid #fff;
   }
 `
 
@@ -16,7 +20,7 @@ const ContactForm = () => {
   const [state, handleSubmit] = useForm('xlekwdqj')
   if (state.succeeded) {
     return (
-      <p className='rounded-xl border border-burnt-sienna border-opacity-50 bg-cod-gray p-9 text-2xl text-white shadow-lg'>
+      <p className='rounded-sm border border-gray-700 border-opacity-50 bg-cod-gray p-9 text-2xl text-white shadow-lg'>
         Thanks, I'll be getting in touch soon.
       </p>
     )
@@ -24,7 +28,7 @@ const ContactForm = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className='flex flex-col space-y-8 rounded-xl border border-burnt-sienna border-opacity-50 bg-cod-gray p-9 text-white shadow-lg'
+      className='flex flex-col space-y-8 rounded-sm border border-gray-700 border-opacity-50 bg-cod-gray p-9 text-white shadow-lg'
     >
       <h2 className='text-3xl'>Let's stay connected!</h2>
       <div>
@@ -38,7 +42,7 @@ const ContactForm = () => {
           type='email'
           id='email'
           name='email'
-          className='focus:ring-primary-500 focus:border-primary-500 focus:ring-primary-500 focus:border-primary-500 shadow-sm-light block w-full rounded-lg border border-gray-300 border-gray-600 bg-gray-50 bg-gray-700 p-2.5 text-sm text-gray-900 text-white placeholder-gray-400 shadow-sm'
+          className='focus:border-primary-500 focus:border-primary-500 shadow-sm-light block w-full rounded-sm border border-gray-600 bg-gray-700 p-2.5 text-sm text-white placeholder-gray-400 shadow-sm focus:ring-white/10'
           placeholder='name@khasmir.com'
           required
         />
@@ -59,7 +63,7 @@ const ContactForm = () => {
           id='message'
           name='message'
           rows={6}
-          className='focus:ring-primary-500 focus:border-primary-500 focus:ring-primary-500 focus:border-primary-500 block w-full rounded-lg border border-gray-300 border-gray-600 bg-gray-50 bg-gray-700 p-2.5 text-sm text-gray-900 text-white placeholder-gray-400 shadow-sm'
+          className='focus:border-primary-500 focus:border-primary-500 block w-full rounded-sm border border-gray-600 bg-gray-700 p-2.5 text-sm text-white placeholder-gray-400 shadow-sm focus:ring-white/10'
           placeholder='Leave a comment...'
           defaultValue={''}
         />

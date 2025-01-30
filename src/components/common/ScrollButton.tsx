@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion'
-import { useState } from 'react'
-import { FaArrowCircleUp } from 'react-icons/fa'
+import { useEffect, useState } from 'react'
+import { FaArrowCircleUp, FaChevronCircleUp } from 'react-icons/fa'
 import styled from 'styled-components'
 
 const Button = styled.div`
   position: fixed;
-  right: 3rem;
+  right: 2rem;
   bottom: 40px;
   font-size: 3rem;
   z-index: 1;
@@ -30,26 +30,39 @@ const ScrollButton = () => {
     })
   }
 
-  window.addEventListener('scroll', toggleVisible)
+  useEffect(() => {
+    window.addEventListener('scroll', toggleVisible)
+    return () => {
+      window.removeEventListener('scroll', toggleVisible)
+    }
+  }, [])
 
   return (
-    <Button>
-      <motion.div
-        initial={{ y: 50, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{
-          type: 'spring',
-          bounce: 0.4,
-          duration: 0.8,
-        }}
-      >
-        <FaArrowCircleUp
+    <>
+      {visible && (
+        <Button>
+          <motion.div
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{
+              type: 'spring',
+              bounce: 0.6,
+              duration: 3,
+            }}
+          >
+            {/* <FaArrowCircleUp
           onClick={scrollToTop}
-          className='cursor-pointer rounded-full border-2 text-burnt-sienna'
+          className='cursor-pointer rounded-full border-2 text-red-400'
           style={{ display: visible ? 'inline' : 'none' }}
-        />
-      </motion.div>
-    </Button>
+        /> */}
+            <FaChevronCircleUp
+              onClick={scrollToTop}
+              className='cursor-pointer rounded-full text-burnt-sienna'
+            />
+          </motion.div>
+        </Button>
+      )}
+    </>
   )
 }
 
