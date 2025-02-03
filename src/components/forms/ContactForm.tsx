@@ -34,9 +34,9 @@ const ContactForm = () => {
       <div>
         <label
           htmlFor='email'
-          className='mb-2 block text-sm font-medium text-gray-300'
+          className='mb-2 block text-left text-sm font-medium text-gray-300'
         >
-          Your email
+          Your email:
         </label>
         <input
           type='email'
@@ -55,9 +55,9 @@ const ContactForm = () => {
       <div className='sm:col-span-2'>
         <label
           htmlFor='message'
-          className='mb-2 block text-sm font-medium text-gray-300'
+          className='mb-2 block text-left text-sm font-medium text-gray-300'
         >
-          Your message
+          Your message:
         </label>
         <textarea
           id='message'

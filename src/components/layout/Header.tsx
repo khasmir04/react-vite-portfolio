@@ -168,6 +168,7 @@ const Header = () => {
             {toggle && (
               <motion.div
                 className='absolute left-0 top-14 h-screen w-screen bg-cod-gray'
+                onClick={() => setToggle(false)}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 0.7 }}
                 exit={{ opacity: 0 }}
