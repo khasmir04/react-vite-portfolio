@@ -19,8 +19,8 @@ const Card = (props: CardProps) => {
   const { title, description, image, githubUrl, liveUrl, tech } = props
   return (
     <motion.div
-      className='shadow-surface-elevation-low hover:shadow-surface-elevation-medium mx-auto max-w-lg rounded-sm border border-cod-gray bg-cod-gray text-left shadow transition duration-300 hover:bg-white/5'
-      whileHover={{ scale: 1.05, rotate: 2 }}
+      className='shadow-surface-elevation-low hover:shadow-surface-elevation-medium mx-auto max-w-lg rounded-sm border border-cod-gray bg-cod-gray text-left shadow hover:bg-white/5'
+      whileHover={{ scale: 1.05, rotate: 2, transition: { duration: 0.3 } }}
       whileTap={{ scale: 0.95, rotate: -2 }}
     >
       <div>
