@@ -13,8 +13,10 @@ const StyledContainer = styled.div`
 const Projects = () => {
   return (
     <StyledContainer id='projects'>
-      <PageTitle title='Featured Projects' />
-      <p className='text-base font-light text-white/50'>A curated selection of my web projects.</p>
+      <PageTitle
+        title='Featured Projects'
+        subtitle='A curated selection of my web projects.'
+      />
       <div className='mt-11 grid grid-cols-1 justify-around gap-9 md:grid-cols-2 lg:grid-cols-3 lg:px-12 xl:gap-16 xl:px-24'>
         {projects.map((project, key) => (
           <Card
