@@ -1,19 +1,40 @@
 import { ReactNode } from 'react'
+import terpImg from '../../assets/img/icons/terp.png'
 
-const ExperienceCard = ({ timeLine, position, company, description }: { timeLine: ReactNode, position: string, company: ReactNode, description: ReactNode }): JSX.Element => {
+const ExperienceCard = ({
+  timeLine,
+  position,
+  company,
+  description,
+  logo,
+}: {
+  timeLine: ReactNode
+  position: string
+  company: ReactNode
+  description: ReactNode
+  logo: string
+}): JSX.Element => {
   return (
-    <li className="mb-10 ml-4">
-      <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white border-gray-900 bg-gray-700" />
-      <time className="mb-1 text-md font-normal leading-none text-gray-400 text-gray-500">
-        {timeLine}
-      </time>
-      <h3 className="text-2xl font-semibold text-gray-900 text-white">
-        {position}
-      </h3>
-      <p className="text-lg font-normal text-gray-500 text-gray-400">
-        {company}
-      </p>
-      {description}
+    <li className='mb-10 ml-6'>
+      <div>
+        <div className='border-white-900 absolute -left-[0.55rem] mt-1.5 h-4 w-4 rounded-full border bg-white' />
+        <time className='text-md mb-1 font-normal leading-none text-gray-500'>{timeLine}</time>
+      </div>
+      {/* Card here */}
+      <div className='rounded-sm border border-white/50 bg-cod-gray p-4 shadow-md shadow-black hover:bg-white/5'>
+        <h3 className='text-2xl font-semibold text-white'>{position}</h3>
+        <div className='flex items-center gap-2 text-lg font-normal text-gray-500'>
+          <div className='my-2 rounded-full border border-gray-300'>
+            <img
+              className='aspect-square h-5 w-5 rounded-full object-contain'
+              src={logo || terpImg}
+              alt='project-cover-image'
+            />
+          </div>
+          {company}
+        </div>
+        {description}
+      </div>
     </li>
   )
 }
