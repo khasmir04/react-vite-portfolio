@@ -6,7 +6,7 @@ interface CardProps {
   title: string
   description: string
   image: string
-  githubUrl: string
+  githubUrl?: string
   liveUrl: string
   tech: string[]
 }
@@ -48,18 +48,20 @@ const Card = (props: CardProps) => {
         <h5 className='mb-2 text-2xl tracking-tight text-white'>{title}</h5>
         <p className='mb-3 font-normal text-gray-400'>{description}</p>
         <div>
-          <StyledLink
-            href={githubUrl}
-            target='_blank'
-            className='inline-flex items-center rounded-sm bg-cod-gray px-3 py-2 text-center text-sm font-medium text-white hover:bg-white/20 focus:outline-none'
-          >
-            Github
-            <HiExternalLink style={{ fontSize: '18px', marginLeft: '4px' }} />
-          </StyledLink>
+          {githubUrl && (
+            <StyledLink
+              href={githubUrl}
+              target='_blank'
+              className='mr-2 inline-flex items-center rounded-sm bg-cod-gray px-3 py-2 text-center text-sm font-medium text-white hover:bg-white/20 focus:outline-none'
+            >
+              Github
+              <HiExternalLink style={{ fontSize: '18px', marginLeft: '4px' }} />
+            </StyledLink>
+          )}
           <StyledLink
             href={liveUrl}
             target='_blank'
-            className='ml-2 inline-flex items-center rounded-sm bg-cod-gray px-3 py-2 text-center text-sm font-medium text-white hover:bg-white/20 focus:outline-none'
+            className='inline-flex items-center rounded-sm bg-cod-gray px-3 py-2 text-center text-sm font-medium text-white hover:bg-white/20 focus:outline-none'
           >
             Live
             <HiExternalLink style={{ fontSize: '18px', marginLeft: '4px' }} />
