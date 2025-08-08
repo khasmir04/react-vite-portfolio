@@ -25,18 +25,18 @@ const About = () => {
             style={{ whiteSpace: 'pre-line' }}
           >
             <p>Khasmir Caluscusao</p>
-            <p className='text-3xl text-burnt-sienna'>Frontend Developer</p>
+            <p className='text-3xl text-burnt-sienna'>Full-stack Engineer</p>
           </div>
           <p className='mb-9 text-xl font-extralight'>
-            I'm a dedicated Front-end React Developer based in the Philippines, with a keen interest
-            in crafting visually appealing and functional websites.
+            I'm a dedicated Full-stack Engineer based in the Philippines, with a keen interest in
+            crafting visually appealing and functional websites.
           </p>
           <p className='mb-9 text-xl font-extralight'>
             My expertise includes a solid foundation in <b>HTML</b>, <b>CSS</b>, <b>TypeScript</b>{' '}
             and <b>JavaScript</b>, along with hands-on experience in <b>React</b>, <b>Next.js</b>,{' '}
             <b>Express</b>, <b>MongoDB</b> and <b>Tailwind CSS</b>.
           </p>
-          <div className='flex items-center text-base'>
+          <div className='flex items-center justify-center text-base md:justify-start'>
             <a
               href='https://github.com/khasmir04'
               target='_blank'
@@ -66,11 +66,11 @@ const About = () => {
               </span>
             </Button> */}
             <a
-              href='#_'
+              href='/docs/CV071924.pdf'
               className='group relative inline-flex items-center justify-start overflow-hidden rounded-sm border border-burnt-sienna bg-white/5 px-4 py-1 font-medium transition-all hover:bg-white/5'
             >
               <span className='absolute bottom-0 left-0 mb-9 ml-9 h-48 w-48 -translate-x-full translate-y-full rotate-[-40deg] rounded-sm bg-burnt-sienna transition-all duration-500 ease-out group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0'></span>
-              <span className='relative flex w-full items-center text-left text-white transition-colors duration-300 ease-in-out group-hover:text-white'>
+              <span className='relative flex w-full items-center text-left text-white transition-colors duration-300 ease-in-out group-hover:text-mine-shaft'>
                 Download CV
                 <AiOutlineDownload
                   className='ml-2 inline font-bold'

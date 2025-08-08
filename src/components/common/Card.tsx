@@ -19,14 +19,17 @@ const Card = (props: CardProps) => {
   const { title, description, image, githubUrl, liveUrl, tech } = props
   return (
     <motion.div
-      className='shadow-surface-elevation-low hover:shadow-surface-elevation-medium mx-auto max-w-lg rounded-sm border border-cod-gray bg-cod-gray text-left shadow hover:bg-white/5'
-      whileHover={{ scale: 1.05, rotate: 2, transition: { duration: 0.3 } }}
-      whileTap={{ scale: 0.95, rotate: -2 }}
+      className='shadow-surface-elevation-low hover:shadow-surface-elevation-medium mx-auto max-w-lg rounded-md border border-cod-gray bg-[#0000004d] text-left shadow hover:bg-[#00000080]'
+      whileHover={{ scale: 1.05, rotate: 1, transition: { duration: 0.3 } }}
+      whileTap={{ scale: 0.95, rotate: -1 }}
+      style={{
+        backdropFilter: 'blur(10px)',
+      }}
     >
       <div>
         <a href={liveUrl}>
           <img
-            className='rounded-t-sm'
+            className='rounded-t-md'
             src={image}
             alt='project-cover-image'
           />
@@ -37,7 +40,7 @@ const Card = (props: CardProps) => {
           {tech.map((item, key) => (
             <span
               key={key}
-              className='rounded-sm bg-gray-700/40 px-2 py-1 text-xs font-medium text-white'
+              className='rounded-md bg-gray-700/40 px-2 py-1 text-xs font-medium text-white'
             >
               {item}
             </span>
@@ -52,7 +55,7 @@ const Card = (props: CardProps) => {
             <StyledLink
               href={githubUrl}
               target='_blank'
-              className='mr-2 inline-flex items-center rounded-sm bg-cod-gray px-3 py-2 text-center text-sm font-medium text-white hover:bg-white/20 focus:outline-none'
+              className='mr-2 inline-flex items-center rounded-md bg-cod-gray px-3 py-2 text-center text-sm font-medium text-white hover:bg-white/20 focus:outline-none'
             >
               Github
               <HiExternalLink style={{ fontSize: '18px', marginLeft: '4px' }} />
@@ -61,7 +64,7 @@ const Card = (props: CardProps) => {
           <StyledLink
             href={liveUrl}
             target='_blank'
-            className='inline-flex items-center rounded-sm bg-cod-gray px-3 py-2 text-center text-sm font-medium text-white hover:bg-white/20 focus:outline-none'
+            className='inline-flex items-center rounded-md bg-cod-gray px-3 py-2 text-center text-sm font-medium text-white hover:bg-white/20 focus:outline-none'
           >
             Live
             <HiExternalLink style={{ fontSize: '18px', marginLeft: '4px' }} />

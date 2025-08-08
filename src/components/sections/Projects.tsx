@@ -33,7 +33,11 @@ const Projects = () => {
         >
           See more of my projects...
         </Button> */}
-        <a className='mx-auto flex w-fit items-center justify-center gap-2 border-b-2 border-transparent text-base transition duration-500 hover:scale-110 hover:cursor-pointer hover:border-current hover:text-2xl'>
+        <a
+          className='mx-auto flex w-fit items-center justify-center gap-2 border-b-2 border-transparent text-base transition duration-500 hover:scale-110 hover:cursor-pointer hover:border-current hover:text-2xl'
+          href='https://github.com/khasmir04?tab=repositories'
+          target='_blank'
+        >
           <p className='text-lg'>See all</p> <BsArrowRight />
         </a>
       </div>

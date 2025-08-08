@@ -41,12 +41,22 @@ const computeDuration = (startDateStr: string) => {
 const experiences = [
   {
     timeLine: <>June 2024 - Present &middot; {computeDuration('June 2024')}</>,
-    position: 'Full Stack Engineer',
+    position: 'Full-stack Engineer',
     company: <>Pru Life UK &middot; Full-time</>,
     description: (
       <StyledDescription>
-        Full Stack Engineer providing solutions and support to other teams.
-        <ul className='ml-4 list-disc text-lg'>
+        Full-stack Engineer providing solutions and support to other teams.
+        <ul className='ml-4 mt-3 flex list-disc flex-col gap-2 text-lg'>
+          <li>
+            Build a <Imp>Dashboard application</Imp> for reporting and tracking of data.
+          </li>
+          <li>
+            Contribute in a user management platform to centralize implementation of{' '}
+            <Imp>Role Based Access Control</Imp> (RBAC).
+          </li>
+          <li>
+            Implement <Imp>File transfer service</Imp> to improve handling of electronic receipts.
+          </li>
           <li>
             <Imp>Migrate existing services</Imp> to improve processing documents, emails, and SMS.
           </li>
@@ -72,7 +82,7 @@ const experiences = [
     description: (
       <StyledDescription>
         Worked as engineer to provide solutions.
-        <ul className='ml-4 list-disc text-lg'>
+        <ul className='ml-4 mt-3 flex list-disc flex-col gap-2 text-lg'>
           <li>
             Build an <Imp>EKYC application</Imp>, integrating third-party APIs end-to-end.
           </li>
@@ -95,12 +105,12 @@ const experiences = [
   },
   {
     timeLine: <>AUGUST 2021 - June 2023 &middot; 1 yr 10 mos</>,
-    position: 'MIDDLE SOFTWARE ENGINEER',
+    position: 'Middle Software Engineer',
     company: <>TERP &middot; Full-time</>,
     description: (
       <StyledDescription>
-        Working for almost 2 years as a Front-End React Developer.
-        <ul className='ml-4 list-disc text-lg'>
+        Worked for almost 2 years as a Front-end React Developer.
+        <ul className='ml-4 mt-3 flex list-disc flex-col gap-2 text-lg'>
           <li>
             Work on a project built using <Imp>ReactJS</Imp>
           </li>
@@ -130,12 +140,12 @@ const experiences = [
   },
   {
     timeLine: <>April 2021 - July 2021 &middot; 4 mos</>,
-    position: 'WEB DEVELOPER TRAINEE',
+    position: 'Web Developer Trainee',
     company: <>KodeGo &middot; Contract</>,
     description: (
       <StyledDescription>
         Learned about web development and how to build a web application.
-        <ul className='ml-4 list-disc text-lg'>
+        <ul className='ml-4 mt-3 flex list-disc flex-col gap-2 text-lg'>
           <li>
             Dived deep into <Imp>HTML, CSS</Imp> and <Imp>JS</Imp>.
           </li>
@@ -160,12 +170,12 @@ const experiences = [
   },
   {
     timeLine: <>February 2020 - May 2020 &middot; 4 mos</>,
-    position: 'SOFTWARE ENGINEER',
+    position: 'Software Engineer',
     company: <>CloudSwyft Global Systems, Inc. &middot; Internship</>,
     description: (
       <StyledDescription>
         Started getting involved with Web Development in a team
-        <ul className='ml-4 list-disc text-lg'>
+        <ul className='ml-4 mt-3 flex list-disc flex-col gap-2 text-lg'>
           <li>
             Use <Imp>Angular</Imp> to create components
           </li>
@@ -182,12 +192,12 @@ const experiences = [
   },
   {
     timeLine: <> May 2013 - April 2016 &middot; 3 yrs</>,
-    position: 'IT STAFF',
+    position: 'IT Staff',
     company: <>Telford SVC. Phils., Inc. &middot; Full-time</>,
     description: (
       <StyledDescription>
         The start of my Career
-        <ul className='ml-4 list-disc text-lg'>
+        <ul className='ml-4 mt-3 flex list-disc flex-col gap-2 text-lg'>
           <li>
             Setup <Imp>network connection</Imp> of workstations
           </li>
