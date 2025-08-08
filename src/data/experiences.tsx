@@ -109,7 +109,7 @@ const experiences = [
     company: <>TERP &middot; Full-time</>,
     description: (
       <StyledDescription>
-        Worked for almost 2 years as a Front-End React Developer.
+        Worked for almost 2 years as a Front-end React Developer.
         <ul className='ml-4 mt-3 flex list-disc flex-col gap-2 text-lg'>
           <li>
             Work on a project built using <Imp>ReactJS</Imp>

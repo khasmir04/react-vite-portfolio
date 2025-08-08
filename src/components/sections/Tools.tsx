@@ -30,6 +30,7 @@ const frontendTools = [
   'TypeScript',
   'JavaScript',
   'Zustand',
+  'Redux',
   'Figma',
   'Ant Design',
   'Mantine UI',
@@ -52,7 +53,7 @@ const backendTools = [
   'Postman',
 ]
 
-const otherTools = ['Git', 'Docker', 'VSCode', 'Kubernetes']
+const otherTools = ['Git', 'Docker', 'VSCode', 'Kubernetes', 'Node-RED', 'Bitbucket']
 
 const renderToolsWithMiddleDot = (tools: string[]) => {
   return tools.map((tool, key) => {
