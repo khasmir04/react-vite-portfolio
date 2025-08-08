@@ -9,6 +9,7 @@ import About from './components/sections/About'
 import Contact from './components/sections/Contact'
 import Experience from './components/sections/Experience'
 import Projects from './components/sections/Projects'
+import Tools from './components/sections/Tools'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <About />
         <Projects />
         <Experience />
+        <Tools />
         <Contact />
       </MainLayout>
     </div>

@@ -4,6 +4,7 @@ import {
   AiOutlineFundProjectionScreen,
   AiOutlinePhone,
   AiOutlineContacts,
+  AiOutlineTool,
 } from 'react-icons/ai'
 import styled from 'styled-components'
 import NavButton from '../common/NavButton'
@@ -91,6 +92,14 @@ const Header = () => {
                 <div className='ml-9 flex items-center gap-2 text-base font-semibold'>
                   <AiOutlineContacts size={24} />
                   Experience
+                </div>
+              </NavButton>
+            </li>
+            <li>
+              <NavButton href='#tools'>
+                <div className='ml-9 flex items-center gap-2 text-base font-semibold'>
+                  <AiOutlineTool size={24} />
+                  Tools
                 </div>
               </NavButton>
             </li>
@@ -199,6 +208,14 @@ const Header = () => {
                 className='block rounded py-2 pl-3 pr-4 text-white/75'
               >
                 Experience
+              </a>
+            </li>
+            <li onClick={() => setToggle(false)}>
+              <a
+                href='#tools'
+                className='block rounded py-2 pl-3 pr-4 text-white/75'
+              >
+                Tools
               </a>
             </li>
             <li onClick={() => setToggle(false)}>

@@ -1,9 +1,5 @@
 import styled from 'styled-components'
-import {
-  AiOutlineHome,
-  AiOutlineUser,
-  AiOutlineFundProjectionScreen,
-} from 'react-icons/ai'
+import { AiOutlineUser, AiOutlineFundProjectionScreen, AiOutlineTool } from 'react-icons/ai'
 import { BsGithub, BsBriefcase, BsTelephone } from 'react-icons/bs'
 import { HiExternalLink } from 'react-icons/hi'
 
@@ -29,6 +25,7 @@ const Labels = {
   about: 'About',
   projects: 'Projects',
   experience: 'Experience',
+  tools: 'Tools',
   contact: 'Contact',
 }
 
@@ -73,6 +70,12 @@ const SideBar = (props: {
             <StyledAnchor href='#experience'>
               <BsBriefcase />
               {isLabeled && Labels['experience']}
+            </StyledAnchor>
+          </li>
+          <li>
+            <StyledAnchor href='#tools'>
+              <AiOutlineTool />
+              {isLabeled && Labels['tools']}
             </StyledAnchor>
           </li>
           <li>

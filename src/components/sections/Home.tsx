@@ -25,12 +25,11 @@ const Home = () => {
       <div className='flex flex-auto flex-col justify-center gap-9 text-left text-7xl md:w-3/5'>
         <p style={{ whiteSpace: 'pre-line' }}>
           Hello,{'\n'}I'm <SpecialText>Dev KJ</SpecialText>,{'\n'}a{' '}
-          <SpecialText>Frontend Developer</SpecialText>
+          <SpecialText>Full-stack Engineer</SpecialText>
         </p>
         <div className='text-base'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
-          expedita beatae ipsam voluptas impedit dolorum praesentium, ipsum
-          minima officiis soluta.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla expedita beatae ipsam
+          voluptas impedit dolorum praesentium, ipsum minima officiis soluta.
         </div>
         <Button
           href='#projects'

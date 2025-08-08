@@ -20,7 +20,7 @@ const ContactForm = () => {
   const [state, handleSubmit] = useForm('xlekwdqj')
   if (state.succeeded) {
     return (
-      <p className='rounded-sm border border-gray-700 border-opacity-50 bg-cod-gray p-9 text-2xl text-white shadow-lg'>
+      <p className='rounded-sm bg-cod-gray p-9 text-2xl text-white'>
         Thanks, I'll be getting in touch soon.
       </p>
     )
@@ -28,9 +28,9 @@ const ContactForm = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className='flex flex-col space-y-8 rounded-sm border border-gray-700 border-opacity-50 bg-cod-gray p-9 text-white shadow-lg'
+      className='mx-auto flex max-w-screen-md flex-col space-y-8 rounded-md bg-cod-gray p-9 text-white'
     >
-      <h2 className='text-3xl'>Let's stay connected!</h2>
+      <h2 className='text-2xl lg:text-3xl'>Let's stay connected!</h2>
       <div>
         <label
           htmlFor='email'
